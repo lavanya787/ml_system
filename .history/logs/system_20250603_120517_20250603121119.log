@@ -1,0 +1,75 @@
+ def intelligent_query_page(self):
+        st.header("💡 Intelligent Query")
+
+        if not st.session_state.get('dataset_uploaded'):
+            st.warning("⚠️ Please upload a dataset first")
+            return
+        
+        if not st.session_state.get('user_id'):
+            st.warning("⚠️ Please enter a User ID first")
+            return
+
+        data = st.session_state['processed_data']
+        raw_data = st.session_state['raw_data']
+        domain = st.session_state['detected_domain']
+        user_id = st.session_state['user_id']
+
+        st.markdown("Ask questions about your data (e.g., 'What is the average price?', 'Show top 5 rows')")
+        question = st.text_input("🔍 Enter your question")
+
+        if question:
+            question_lower = question.lower()
+            
+            # Handle basic queries with simple rules
+            if re.search(r"\b(top|head)\b", question_lower):
+                match = re.search(r"\b(?:top|head)\s*(\d+)", question_lower)
+                num = int(match.group(1)) if match else 5
+                st.write(f"Showing top {num} rows:")
+                st.dataframe(data.head(num))
+                
+            elif "columns" in question_lower:
+                st.write("Available columns:", list(data.columns))
+
+            elif "shape" in question_lower or "size" in question_lower:
+                st.write(f"Dataset shape: {data.shape[0]} rows × {data.shape[1]} columns")
+
+            elif "describe" in question_lower or "summary" in question_lower:
+                st.write("Dataset summary:")
+                st.dataframe(data.describe())
+                
+            elif "missing" in question_lower or "null" in question_lower:
+                st.write("Missing values:")
+                st.write(data.isnull().sum())
+
+            elif "average" in question_lower or "mean" in question_lower:
+                numeric_cols = data.select_dtypes(include='number').columns
+                if len(numeric_cols) > 0:
+                    st.write("Average values:")
+                    for col in numeric_cols:
+                        st.write(f"- {col}: {data[col].mean():.2f}")
+                else:
+                    st.write("No numeric columns found")
+
+            else:
+                # Advanced query handling (only if query_handler is available)
+                if self.query_handler:
+                    with st.spinner("Processing your query..."):
+                        try:
+                            response = self.query_handler.handle_query(
+                                query=question,
+                                domain=domain,
+                                raw_data=raw_data,
+                                user_id=user_id,
+                                processed_data=data,
+                                model_handler=self.model_handler
+                            )
+
+                            st.write("**Response:**")
+                            if isinstance(response, pd.DataFrame):
+                                st.dataframe(response)
+                            else:
+                                st.write(response)
+                        except Exception as e:
+                            st.error(f"Error processing query: {e}")
+                else:
+                    st.warning("Advanced query processing not available due to import issues.")

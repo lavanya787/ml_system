@@ -1,0 +1,1 @@
+pandas numpy scikit-learn streamlit plotly joblib tensorflow>=2.15.0 transformers>=4.35.0 torch>=2.0.0 cachetools>=5.3.0

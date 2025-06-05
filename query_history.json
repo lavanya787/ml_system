@@ -1,0 +1,1094 @@
+{
+  "user_1cd37268": [
+    {
+      "query_id": "8e4525c4",
+      "title": "",
+      "query": "",
+      "response": {
+        "result": "Sorry, no relevant data found for your query.",
+        "intent": "general",
+        "confidence": 0.5,
+        "query": "",
+        "user_id": "user_1cd37268"
+      },
+      "domain": null,
+      "timestamp": "2025-06-02T13:24:15.290551",
+      "date": "2025-06-02",
+      "time": "13:24:15"
+    }
+  ],
+  "user_48635053": [
+    {
+      "query_id": "c4d14c23",
+      "title": "",
+      "query": "",
+      "response": {
+        "result": "Sorry, no relevant data found for your query.",
+        "intent": "general",
+        "confidence": 0.5,
+        "query": "",
+        "user_id": "user_48635053"
+      },
+      "domain": null,
+      "timestamp": "2025-06-02T13:25:07.327956",
+      "date": "2025-06-02",
+      "time": "13:25:07"
+    }
+  ],
+  "user_e6f5bc10": [
+    {
+      "query_id": "d54f7952",
+      "title": "",
+      "query": "",
+      "response": {
+        "result": "Sorry, no relevant data found for your query.",
+        "intent": "general",
+        "confidence": 0.5,
+        "query": "",
+        "user_id": "user_e6f5bc10"
+      },
+      "domain": null,
+      "timestamp": "2025-06-02T14:36:35.181813",
+      "date": "2025-06-02",
+      "time": "14:36:35"
+    }
+  ],
+  "user_56353f23": [
+    {
+      "query_id": "ebd340f9",
+      "title": "",
+      "query": "",
+      "response": {
+        "result": "Sorry, no relevant data found for your query.",
+        "intent": "general",
+        "confidence": 0.5,
+        "query": "",
+        "user_id": "user_56353f23"
+      },
+      "domain": null,
+      "timestamp": "2025-06-02T15:00:32.294396",
+      "date": "2025-06-02",
+      "time": "15:00:32"
+    }
+  ],
+  "user_7c9ffa17": [
+    {
+      "query_id": "98ccd216",
+      "title": "",
+      "query": "",
+      "response": {
+        "result": "Sorry, no relevant data found for your query.",
+        "intent": "general",
+        "confidence": 0.5,
+        "query": "",
+        "user_id": "user_7c9ffa17"
+      },
+      "domain": null,
+      "timestamp": "2025-06-02T15:23:55.423725",
+      "date": "2025-06-02",
+      "time": "15:23:55"
+    }
+  ],
+  "user_49457cfd": [
+    {
+      "query_id": "f0eefcea",
+      "title": "",
+      "query": "",
+      "response": {
+        "result": "Sorry, no relevant data found for your query.",
+        "intent": "general",
+        "confidence": 0.5,
+        "query": "",
+        "user_id": "user_49457cfd"
+      },
+      "domain": null,
+      "timestamp": "2025-06-02T15:52:07.768387",
+      "date": "2025-06-02",
+      "time": "15:52:07"
+    }
+  ],
+  "user_d7190244": [
+    {
+      "query_id": "3f771f9e",
+      "title": "",
+      "query": "",
+      "response": {
+        "type": "general",
+        "topics": [
+          "general_guidance"
+        ],
+        "query": "",
+        "general_guidance": {
+          "message": "I can help with machine learning, data science, and analytics questions.",
+          "areas_of_expertise": [
+            "Model prediction and forecasting",
+            "Performance evaluation and metrics",
+            "Risk assessment and mitigation",
+            "Data preprocessing and feature engineering",
+            "Model selection and comparison"
+          ]
+        },
+        "message": "Here's comprehensive guidance based on your query.",
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "user_d7190244"
+      },
+      "domain": null,
+      "timestamp": "2025-06-02T16:31:30.780921",
+      "date": "2025-06-02",
+      "time": "16:31:30"
+    }
+  ],
+  "user_7f5d0241": [
+    {
+      "query_id": "8199dedf",
+      "title": "",
+      "query": "",
+      "response": {
+        "type": "general",
+        "topics": [
+          "general_guidance"
+        ],
+        "query": "",
+        "general_guidance": {
+          "message": "I can help with machine learning, data science, and analytics questions.",
+          "areas_of_expertise": [
+            "Model prediction and forecasting",
+            "Performance evaluation and metrics",
+            "Risk assessment and mitigation",
+            "Data preprocessing and feature engineering",
+            "Model selection and comparison"
+          ]
+        },
+        "message": "Here's comprehensive guidance based on your query.",
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "user_7f5d0241"
+      },
+      "domain": null,
+      "timestamp": "2025-06-02T16:32:37.132198",
+      "date": "2025-06-02",
+      "time": "16:32:37"
+    }
+  ],
+  "f72d890ee2ab": [
+    {
+      "query_id": "9b70c385",
+      "title": "",
+      "query": "",
+      "response": {
+        "timestamp": "2025-06-02T17:31:40.248145",
+        "question": "",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "f72d890ee2ab"
+      },
+      "domain": "education",
+      "timestamp": "2025-06-02T17:31:40.575039",
+      "date": "2025-06-02",
+      "time": "17:31:40"
+    }
+  ],
+  "b3f026b948eb": [
+    {
+      "query_id": "977f269e",
+      "title": "",
+      "query": "",
+      "response": {
+        "timestamp": "2025-06-02T17:38:46.985399",
+        "question": "",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "b3f026b948eb"
+      },
+      "domain": "education",
+      "timestamp": "2025-06-02T17:38:46.998732",
+      "date": "2025-06-02",
+      "time": "17:38:46"
+    }
+  ],
+  "44c61cfa83c1": [
+    {
+      "query_id": "2084569f",
+      "title": "",
+      "query": "",
+      "response": {
+        "timestamp": "2025-06-03T10:41:57.859194",
+        "question": "",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "44c61cfa83c1"
+      },
+      "domain": "education",
+      "timestamp": "2025-06-03T10:41:57.868431",
+      "date": "2025-06-03",
+      "time": "10:41:57"
+    }
+  ],
+  "Lavanya": [
+    {
+      "query": "What is the physics mark of stu0004?",
+      "response": {
+        "timestamp": "2025-06-03T12:05:21.619643",
+        "question": "What is the physics mark of stu0004?",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "Lavanya",
+        "query_id": "603d34ca"
+      },
+      "timestamp": "2025-06-03T12:05:21.626002"
+    },
+    {
+      "query": "what is the physics mark of stu004?",
+      "response": {
+        "timestamp": "2025-06-03T12:05:57.385865",
+        "question": "what is the physics mark of stu004?",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "Lavanya",
+        "query_id": "3343ba9c"
+      },
+      "timestamp": "2025-06-03T12:05:57.390221"
+    },
+    {
+      "query": "",
+      "response": {
+        "timestamp": "2025-06-03T12:22:32.763003",
+        "question": "",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "generic",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "Lavanya",
+        "query_id": "d896eebe"
+      },
+      "timestamp": "2025-06-03T12:22:32.769232"
+    },
+    {
+      "query": "what  is the chemistry and physics marks of stu008?",
+      "response": {
+        "timestamp": "2025-06-03T13:24:12.991028",
+        "question": "what  is the chemistry and physics marks of stu008?",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "Lavanya",
+        "query_id": "db5e8f21"
+      },
+      "timestamp": "2025-06-03T13:24:12.996261"
+    },
+    {
+      "query": "what  is the chemistry and physics marks of stu008?",
+      "response": {
+        "timestamp": "2025-06-03T13:24:47.916075",
+        "question": "what  is the chemistry and physics marks of stu008?",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "Lavanya",
+        "query_id": "4e7aa197"
+      },
+      "timestamp": "2025-06-03T13:24:47.920075"
+    },
+    {
+      "query": "what is the chemistry and physics marks of stu008?",
+      "response": {
+        "timestamp": "2025-06-03T13:24:50.979819",
+        "question": "what is the chemistry and physics marks of stu008?",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "Lavanya",
+        "query_id": "9334cbd4"
+      },
+      "timestamp": "2025-06-03T13:24:50.984290"
+    },
+    {
+      "query": "list of subjects?",
+      "response": {
+        "timestamp": "2025-06-03T14:18:15.477564",
+        "question": "list of subjects?",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "Lavanya",
+        "query_id": "0c6ad871"
+      },
+      "timestamp": "2025-06-03T14:18:15.483106"
+    },
+    {
+      "query": "give me the list of subjects?",
+      "response": {
+        "timestamp": "2025-06-03T14:18:30.980780",
+        "question": "give me the list of subjects?",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "Lavanya",
+        "query_id": "a80c866b"
+      },
+      "timestamp": "2025-06-03T14:18:30.988122"
+    },
+    {
+      "query": "give me the list of students?",
+      "response": {
+        "timestamp": "2025-06-03T14:18:37.321250",
+        "question": "give me the list of students?",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "Lavanya",
+        "query_id": "94dc37e3"
+      },
+      "timestamp": "2025-06-03T14:18:37.325694"
+    },
+    {
+      "query": "who scored lowest marks in chemistry subject?",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "921c968a",
+        "query": "who scored lowest marks in chemistry subject?"
+      },
+      "timestamp": "2025-06-03T14:47:58.371810"
+    },
+    {
+      "query": "who scored lowest marks in chemistry subject?",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "b22f6041",
+        "query": "who scored lowest marks in chemistry subject?"
+      },
+      "timestamp": "2025-06-03T14:48:14.346681"
+    },
+    {
+      "query": "who secured lowest marks in chemistry subject?",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "391f2f6c",
+        "query": "who secured lowest marks in chemistry subject?"
+      },
+      "timestamp": "2025-06-03T14:48:29.609584"
+    },
+    {
+      "query": "who secured lowest marks in chemistry subject?",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "26123375",
+        "query": "who secured lowest marks in chemistry subject?"
+      },
+      "timestamp": "2025-06-03T14:48:48.314805"
+    },
+    {
+      "query": "what is the lowest marks in chemistry subject?",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "c7c78c54",
+        "query": "what is the lowest marks in chemistry subject?"
+      },
+      "timestamp": "2025-06-03T14:49:09.628375"
+    },
+    {
+      "query": "who got lowest marks in chemistry?",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "dda8a365",
+        "query": "who got lowest marks in chemistry?"
+      },
+      "timestamp": "2025-06-03T14:49:36.044369"
+    },
+    {
+      "query": "W",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "f50f403a",
+        "query": "W"
+      },
+      "timestamp": "2025-06-03T15:40:27.413722"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "0ee88cf3",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:41.473692"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "d9725e71",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:43.003374"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "d76bdf3f",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:44.447628"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "91f5eaff",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:45.911112"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "50d4e87d",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:47.382750"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "9e1733de",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:48.846987"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "08970c9c",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:50.321900"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "e0ab4c89",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:51.776542"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "cd7f7efa",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:53.257602"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "16ebc518",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:54.729913"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "63afe333",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:56.189350"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "1e20696d",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:57.645165"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "51e1bc14",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:23:59.103283"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "5b3493ac",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:00.645066"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "ab054ce8",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:02.090783"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "17733b9a",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:03.502156"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "773ffcc0",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:04.975302"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "c35ee6c2",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:06.558323"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "f5a05842",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:08.173110"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "58629b13",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:09.715107"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "cefb4ffb",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:11.331988"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "8e3945bc",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:12.813110"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "ecf97b72",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:14.362191"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "85ff107e",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:15.897624"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "7f1d0097",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:17.318220"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "08436fcc",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:18.038762"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "6be6e9c3",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:18.769535"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "86721ef1",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:19.517545"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "97f0b450",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:20.322346"
+    },
+    {
+      "query": "summarize the file",
+      "response": {
+        "type": "general",
+        "message": "I can help with machine learning, data science, and analytics questions.",
+        "areas_of_expertise": [
+          "Model prediction",
+          "Performance evaluation",
+          "Risk assessment",
+          "Data preprocessing"
+        ],
+        "intent": "general",
+        "confidence": 0.5,
+        "user_id": "Lavanya",
+        "query_id": "a7e7a93d",
+        "query": "summarize the file"
+      },
+      "timestamp": "2025-06-04T11:24:21.123190"
+    }
+  ],
+  "66abf09eba52": [
+    {
+      "query": "",
+      "response": {
+        "timestamp": "2025-06-03T12:10:33.454151",
+        "question": "",
+        "answer": "No data loaded. Please train a model first.",
+        "domain": "education",
+        "has_answer": true,
+        "intent": "model_specific",
+        "confidence": 1.0,
+        "user_id": "66abf09eba52",
+        "query_id": "a8beaae1"
+      },
+      "timestamp": "2025-06-03T12:10:33.463843"
+    }
+  ]
+}

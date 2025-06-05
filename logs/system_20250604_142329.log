@@ -1,0 +1,1353 @@
+2025-06-04 14:23:29,422 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:23:29,422 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:23:29,426 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:23:29,426 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:23:29,429 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:23:29,429 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:23:29,431 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:23:29,432 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:23:29,435 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:23:29,436 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:23:29,440 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:23:29,440 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:23:29,445 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:23:29,448 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:23:29,454 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:23:29,455 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:23:29,461 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:23:29,462 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:23:29,465 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:23:29,466 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:23:29,468 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:23:29,469 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:23:29,473 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:23:29,473 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:23:29,480 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:23:29,480 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:23:29,484 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:23:29,484 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:23:29,496 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:23:29,500 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:23:29,514 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:23:29,520 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:23:29,528 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:23:29,528 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:23:29,533 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:23:29,536 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:23:29,549 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:23:29,552 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:23:29,564 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:23:29,564 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:23:29,570 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:23:29,570 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:23:29,578 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:23:29,583 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:23:29,586 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:25:15,531 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:25:15,546 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:25:15,548 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:25:15,549 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:25:15,550 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:25:15,551 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:25:15,551 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:25:15,552 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:25:15,552 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:25:15,553 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:25:15,553 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:25:15,554 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:25:15,554 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:25:15,554 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:25:15,555 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:25:15,555 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:25:15,556 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:25:15,557 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:25:15,558 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:25:15,558 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:25:15,559 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:25:15,559 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:25:15,560 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:25:15,560 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:25:15,561 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:25:15,561 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:25:15,561 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:25:15,562 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:25:15,562 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:25:15,563 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:25:15,563 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:25:15,563 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:25:15,564 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:25:15,564 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:25:15,565 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:25:15,566 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:25:15,567 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:25:15,567 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:25:15,568 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:25:15,568 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:25:15,569 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:25:15,569 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:25:15,569 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:25:15,570 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:25:15,570 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:25:19,080 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:25:19,081 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:25:19,081 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:25:19,081 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:25:19,081 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:25:19,083 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:25:19,083 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:25:19,083 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:25:19,083 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:25:19,083 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:25:19,084 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:25:19,086 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:25:19,086 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:25:19,087 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:25:19,087 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:25:19,087 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:25:19,087 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:25:19,088 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:25:19,088 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:25:19,088 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:25:19,089 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:25:19,089 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:25:19,089 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:25:19,089 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:25:19,091 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:25:19,091 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:25:19,091 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:25:19,091 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:25:19,091 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:25:19,092 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:25:19,092 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:25:19,092 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:25:19,092 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:25:19,092 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:25:19,093 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:25:19,093 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:25:19,095 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:25:19,095 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:25:19,096 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:25:19,096 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:25:19,096 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:25:19,096 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:25:19,096 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:25:19,097 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:25:19,097 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:25:19,179 - SystemLogger - INFO - Dataset loaded successfully! Shape: (10000, 13)
+2025-06-04 14:25:19,180 - SystemLogger - INFO - Dataset columns: ['Roll No', 'Name', 'Gender', 'Age', 'Maths', 'Physics', 'Chemistry', 'English', 'Computer', 'Total Marks', 'Percentage', 'Attendance (%)', 'Extra Curricular']
+2025-06-04 14:25:19,181 - SystemLogger - INFO - Dataset shape: (10000, 13)
+2025-06-04 14:25:19,226 - SystemLogger - INFO - Sample data:
+   Roll No            Name  ... Attendance (%)  Extra Curricular
+0  STU0001  Pallavi Doctor  ...          90.42            Sports
+1  STU0002      Ubika Gade  ...          62.21      Science Club
+2  STU0003      Sai Munshi  ...          60.32             Drama
+2025-06-04 14:25:19,231 - SystemLogger - INFO - Using fallback keywords for domain 'customer_support': ['ticket', 'complaint', 'issue', 'support', 'customer']...
+2025-06-04 14:25:19,232 - SystemLogger - INFO - Using fallback keywords for domain 'marketing': ['campaign', 'lead', 'conversion', 'revenue', 'marketing']...
+2025-06-04 14:25:19,232 - SystemLogger - INFO - Using fallback keywords for domain 'retail': ['product', 'price', 'sale', 'inventory', 'purchase']...
+2025-06-04 14:25:19,236 - SystemLogger - INFO - Using fallback keywords for domain 'hr_resources': ['employee', 'salary', 'department', 'position', 'hire']...
+2025-06-04 14:25:19,237 - SystemLogger - INFO - Domain 'education': 8 keyword matches in columns, score: 0.4211
+2025-06-04 14:25:19,237 - SystemLogger - INFO - Using fallback keywords for domain 'generic': ['data', 'record', 'entry', 'information', 'details']...
+2025-06-04 14:25:19,238 - SystemLogger - INFO - Column analysis scores: {'customer_support': 0.0, 'marketing': 0.0, 'retail': 0.0, 'hr_resources': 0.0, 'education': 0.42105263157894735, 'generic': 0.0}
+2025-06-04 14:25:19,255 - SystemLogger - INFO - Automatically detected text columns: ['Roll No', 'Name', 'Extra Curricular']
+2025-06-04 14:25:19,264 - SystemLogger - INFO - Analyzing content from 100 rows, 2805 characters
+2025-06-04 14:25:19,264 - SystemLogger - INFO - Using fallback keywords for domain 'customer_support': ['ticket', 'complaint', 'issue', 'support', 'customer']...
+2025-06-04 14:25:19,312 - SystemLogger - INFO - Using fallback keywords for domain 'marketing': ['campaign', 'lead', 'conversion', 'revenue', 'marketing']...
+2025-06-04 14:25:19,321 - SystemLogger - INFO - Using fallback keywords for domain 'retail': ['product', 'price', 'sale', 'inventory', 'purchase']...
+2025-06-04 14:25:19,330 - SystemLogger - INFO - Using fallback keywords for domain 'hr_resources': ['employee', 'salary', 'department', 'position', 'hire']...
+2025-06-04 14:25:19,347 - SystemLogger - INFO - Using fallback keywords for domain 'generic': ['data', 'record', 'entry', 'information', 'details']...
+2025-06-04 14:25:19,353 - SystemLogger - INFO - Content analysis scores: {'customer_support': 0.0, 'marketing': 0.0, 'retail': 0.0, 'hr_resources': 0.0, 'education': 0.0, 'generic': 0.0}
+2025-06-04 14:25:19,355 - SystemLogger - INFO - Domain 'education': column_score=0.4211, content_score=0.0000, combined=0.2947
+2025-06-04 14:25:19,355 - SystemLogger - INFO - Best domain match: 'education' with confidence: 0.2947
+2025-06-04 14:25:19,405 - SystemLogger - INFO - Cleaned data: 10000 rows, 13 columns
+2025-06-04 14:25:19,408 - SystemLogger - ERROR - Data processing failed: 'str' object has no attribute 'detect_domain'
+2025-06-04 14:25:28,687 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:25:28,688 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:25:28,689 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:25:28,690 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:25:28,690 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:25:28,690 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:25:28,690 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:25:28,692 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:25:28,692 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:25:28,692 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:25:28,692 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:25:28,692 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:25:28,693 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:25:28,693 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:25:28,693 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:25:28,694 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:25:28,694 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:25:28,694 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:25:28,694 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:25:28,695 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:25:28,695 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:25:28,695 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:25:28,695 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:25:28,695 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:25:28,697 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:25:28,698 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:25:28,700 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:25:28,701 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:25:28,705 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:25:28,705 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:25:28,706 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:25:28,707 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:25:28,707 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:25:28,707 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:25:28,708 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:25:28,708 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:25:28,708 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:25:28,708 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:25:28,708 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:25:28,709 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:25:28,709 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:25:28,709 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:25:28,710 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:25:28,710 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:25:28,712 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:25:31,373 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:25:31,374 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:25:31,374 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:25:31,375 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:25:31,375 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:25:31,375 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:25:31,376 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:25:31,376 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:25:31,376 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:25:31,376 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:25:31,378 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:25:31,378 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:25:31,379 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:25:31,379 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:25:31,379 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:25:31,380 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:25:31,380 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:25:31,380 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:25:31,382 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:25:31,384 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:25:31,385 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:25:31,386 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:25:31,387 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:25:31,390 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:25:31,391 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:25:31,391 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:25:31,391 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:25:31,391 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:25:31,391 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:25:31,392 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:25:31,392 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:25:31,392 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:25:31,392 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:25:31,394 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:25:31,394 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:25:31,394 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:25:31,394 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:25:31,395 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:25:31,395 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:25:31,395 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:25:31,395 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:25:31,395 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:25:31,396 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:25:31,396 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:25:31,396 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:25:31,414 - SystemLogger - INFO - Starting training for general domain with target column: education
+2025-06-04 14:25:31,420 - SystemLogger - ERROR - Target column 'education' not found. Available columns: ['Roll No', 'Name', 'Gender', 'Age', 'Maths', 'Physics', 'Chemistry', 'English', 'Computer', 'Total Marks', 'Percentage', 'Attendance (%)', 'Extra Curricular']
+2025-06-04 14:25:31,423 - SystemLogger - INFO - Model trained for domain: education
+2025-06-04 14:25:37,143 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:25:37,145 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:25:37,145 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:25:37,145 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:25:37,146 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:25:37,146 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:25:37,148 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:25:37,149 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:25:37,150 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:25:37,150 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:25:37,150 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:25:37,150 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:25:37,151 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:25:37,151 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:25:37,151 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:25:37,152 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:25:37,152 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:25:37,152 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:25:37,152 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:25:37,153 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:25:37,153 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:25:37,153 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:25:37,154 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:25:37,154 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:25:37,155 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:25:37,155 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:25:37,156 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:25:37,157 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:25:37,157 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:25:37,158 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:25:37,158 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:25:37,159 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:25:37,159 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:25:37,159 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:25:37,160 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:25:37,160 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:25:37,160 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:25:37,161 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:25:37,161 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:25:37,162 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:25:37,162 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:25:37,162 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:25:37,162 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:25:37,162 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:25:37,163 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:25:42,075 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:25:42,075 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:25:42,076 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:25:42,076 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:25:42,078 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:25:42,078 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:25:42,078 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:25:42,078 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:25:42,079 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:25:42,079 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:25:42,080 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:25:42,080 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:25:42,080 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:25:42,080 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:25:42,081 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:25:42,081 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:25:42,082 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:25:42,082 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:25:42,082 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:25:42,082 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:25:42,083 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:25:42,083 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:25:42,083 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:25:42,083 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:25:42,084 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:25:42,084 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:25:42,084 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:25:42,085 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:25:42,085 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:25:42,085 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:25:42,085 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:25:42,086 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:25:42,086 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:25:42,086 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:25:42,087 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:25:42,087 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:25:42,087 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:25:42,088 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:25:42,088 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:25:42,088 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:25:42,089 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:25:42,089 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:25:42,089 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:25:42,090 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:25:42,090 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:25:42,726 - SystemLogger - INFO - User query: That is the physics mark of stu0004?
+2025-06-04 14:25:59,574 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:25:59,574 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:25:59,576 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:25:59,576 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:25:59,577 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:25:59,577 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:25:59,578 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:25:59,578 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:25:59,579 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:25:59,580 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:25:59,581 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:25:59,581 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:25:59,582 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:25:59,583 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:25:59,583 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:25:59,583 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:25:59,583 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:25:59,585 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:25:59,586 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:25:59,586 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:25:59,586 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:25:59,586 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:25:59,587 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:25:59,587 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:25:59,588 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:25:59,588 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:25:59,588 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:25:59,589 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:25:59,590 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:25:59,590 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:25:59,591 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:25:59,591 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:25:59,591 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:25:59,591 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:25:59,592 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:25:59,592 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:25:59,593 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:25:59,593 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:25:59,594 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:25:59,594 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:25:59,595 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:25:59,595 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:25:59,596 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:25:59,596 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:25:59,596 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:26:00,087 - SystemLogger - INFO - User query: That is the physics  and chemistry mark of stu0004?
+2025-06-04 14:26:08,843 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:26:08,844 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:26:08,845 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:26:08,845 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:26:08,845 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:26:08,846 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:26:08,847 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:26:08,847 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:26:08,847 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:26:08,848 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:26:08,848 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:26:08,848 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:26:08,849 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:26:08,849 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:26:08,850 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:26:08,851 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:26:08,851 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:26:08,852 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:26:08,853 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:26:08,853 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:26:08,854 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:26:08,854 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:26:08,855 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:26:08,855 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:26:08,855 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:26:08,856 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:26:08,857 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:26:08,857 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:26:08,858 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:26:08,859 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:26:08,861 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:26:08,862 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:26:08,862 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:26:08,862 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:26:08,863 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:26:08,863 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:26:08,864 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:26:08,864 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:26:08,865 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:26:08,866 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:26:08,866 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:26:08,866 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:26:08,867 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:26:08,867 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:26:08,868 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:26:09,355 - SystemLogger - INFO - User query: That is the physics  and chemistry mark of stu0004?
+2025-06-04 14:26:10,902 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:26:10,908 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:26:10,912 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:26:10,912 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:26:10,913 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:26:10,915 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:26:10,915 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:26:10,917 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:26:10,919 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:26:10,919 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:26:10,921 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:26:10,922 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:26:10,927 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:26:10,934 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:26:10,935 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:26:10,938 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:26:10,939 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:26:10,941 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:26:10,950 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:26:10,950 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:26:10,951 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:26:10,951 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:26:10,953 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:26:10,953 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:26:10,953 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:26:10,957 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:26:10,963 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:26:10,965 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:26:10,967 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:26:10,968 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:26:10,968 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:26:10,969 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:26:10,969 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:26:10,969 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:26:10,970 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:26:10,970 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:26:10,970 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:26:10,971 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:26:10,971 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:26:10,972 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:26:10,976 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:26:11,003 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:26:11,011 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:26:11,016 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:26:11,032 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:26:12,694 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:26:12,695 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:26:12,695 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:26:12,696 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:26:12,696 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:26:12,697 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:26:12,698 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:26:12,698 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:26:12,698 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:26:12,699 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:26:12,699 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:26:12,701 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:26:12,701 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:26:12,702 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:26:12,703 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:26:12,703 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:26:12,704 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:26:12,705 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:26:12,705 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:26:12,706 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:26:12,707 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:26:12,708 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:26:12,709 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:26:12,710 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:26:12,711 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:26:12,712 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:26:12,712 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:26:12,713 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:26:12,713 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:26:12,714 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:26:12,714 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:26:12,715 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:26:12,716 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:26:12,716 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:26:12,717 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:26:12,717 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:26:12,718 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:26:12,718 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:26:12,719 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:26:12,719 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:26:12,720 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:26:12,720 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:26:12,721 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:26:12,723 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:26:12,723 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:26:18,601 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:26:18,603 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:26:18,603 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:26:18,603 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:26:18,604 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:26:18,604 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:26:18,604 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:26:18,605 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:26:18,605 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:26:18,605 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:26:18,606 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:26:18,606 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:26:18,606 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:26:18,606 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:26:18,607 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:26:18,607 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:26:18,608 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:26:18,608 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:26:18,608 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:26:18,608 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:26:18,609 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:26:18,609 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:26:18,609 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:26:18,609 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:26:18,611 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:26:18,611 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:26:18,611 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:26:18,611 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:26:18,611 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:26:18,611 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:26:18,612 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:26:18,612 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:26:18,612 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:26:18,612 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:26:18,613 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:26:18,613 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:26:18,613 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:26:18,614 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:26:18,614 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:26:18,615 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:26:18,616 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:26:18,616 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:26:18,616 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:26:18,617 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:26:18,617 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:26:19,089 - SystemLogger - INFO - User query: That is the physics  and chemistry mark of stu0004?
+2025-06-04 14:26:29,056 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:26:29,056 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:26:29,057 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:26:29,057 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:26:29,058 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:26:29,058 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:26:29,059 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:26:29,059 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:26:29,059 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:26:29,060 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:26:29,060 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:26:29,060 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:26:29,061 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:26:29,061 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:26:29,061 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:26:29,062 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:26:29,062 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:26:29,063 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:26:29,063 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:26:29,064 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:26:29,064 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:26:29,065 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:26:29,065 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:26:29,066 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:26:29,066 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:26:29,067 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:26:29,068 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:26:29,070 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:26:29,072 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:26:29,072 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:26:29,074 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:26:29,075 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:26:29,076 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:26:29,076 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:26:29,077 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:26:29,077 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:26:29,078 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:26:29,078 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:26:29,079 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:26:29,079 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:26:29,079 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:26:29,079 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:26:29,080 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:26:29,080 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:26:29,081 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:26:29,633 - SystemLogger - INFO - User query: That is the physics  and chemistry mark of stu0004?
+2025-06-04 14:26:31,034 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:26:31,035 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:26:31,036 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:26:31,037 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:26:31,037 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:26:31,037 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:26:31,038 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:26:31,038 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:26:31,038 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:26:31,038 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:26:31,039 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:26:31,039 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:26:31,039 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:26:31,040 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:26:31,040 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:26:31,040 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:26:31,040 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:26:31,040 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:26:31,040 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:26:31,042 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:26:31,042 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:26:31,043 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:26:31,043 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:26:31,043 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:26:31,043 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:26:31,043 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:26:31,044 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:26:31,044 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:26:31,045 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:26:31,046 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:26:31,046 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:26:31,047 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:26:31,048 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:26:31,048 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:26:31,049 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:26:31,049 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:26:31,049 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:26:31,050 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:26:31,050 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:26:31,050 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:26:31,051 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:26:31,051 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:26:31,051 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:26:31,052 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:26:31,053 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:26:32,620 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:26:32,622 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:26:32,622 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:26:32,622 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:26:32,622 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:26:32,623 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:26:32,623 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:26:32,623 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:26:32,623 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:26:32,623 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:26:32,624 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:26:32,624 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:26:32,624 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:26:32,626 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:26:32,626 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:26:32,626 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:26:32,627 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:26:32,627 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:26:32,628 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:26:32,628 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:26:32,629 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:26:32,629 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:26:32,629 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:26:32,630 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:26:32,630 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:26:32,631 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:26:32,632 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:26:32,632 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:26:32,633 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:26:32,633 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:26:32,634 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:26:32,634 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:26:32,635 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:26:32,635 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:26:32,636 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:26:32,638 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:26:32,639 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:26:32,639 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:26:32,640 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:26:32,640 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:26:32,643 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:26:32,644 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:26:32,644 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:26:32,645 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:26:32,645 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:26:37,757 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:26:37,758 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:26:37,758 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:26:37,758 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:26:37,760 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:26:37,760 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:26:37,760 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:26:37,761 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:26:37,761 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:26:37,761 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:26:37,762 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:26:37,762 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:26:37,763 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:26:37,763 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:26:37,763 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:26:37,764 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:26:37,764 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:26:37,765 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:26:37,766 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:26:37,766 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:26:37,767 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:26:37,767 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:26:37,769 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:26:37,770 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:26:37,772 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:26:37,772 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:26:37,773 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:26:37,774 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:26:37,774 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:26:37,775 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:26:37,775 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:26:37,775 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:26:37,775 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:26:37,776 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:26:37,776 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:26:37,777 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:26:37,777 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:26:37,777 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:26:37,778 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:26:37,778 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:26:37,779 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:26:37,779 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:26:37,780 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:26:37,780 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:26:37,781 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:26:38,308 - SystemLogger - INFO - User query: That is the physics  and chemistry mark of stu0004?
+2025-06-04 14:27:15,327 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:15,338 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:15,339 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:15,339 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:15,340 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:15,340 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:15,341 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:15,341 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:15,341 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:15,342 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:15,342 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:15,343 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:15,343 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:15,344 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:15,344 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:15,345 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:15,345 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:15,345 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:15,345 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:15,346 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:15,346 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:15,346 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:15,346 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:15,346 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:15,348 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:15,348 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:15,348 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:15,349 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:15,349 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:15,349 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:15,350 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:15,350 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:15,351 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:15,351 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:15,351 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:15,352 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:15,352 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:15,352 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:15,353 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:15,353 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:15,353 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:15,354 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:15,354 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:15,354 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:15,354 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:15,819 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:18,627 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:18,630 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:18,630 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:18,630 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:18,631 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:18,631 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:18,631 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:18,631 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:18,631 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:18,632 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:18,632 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:18,632 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:18,633 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:18,633 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:18,633 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:18,635 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:18,636 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:18,636 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:18,637 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:18,637 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:18,637 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:18,637 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:18,639 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:18,639 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:18,639 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:18,639 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:18,640 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:18,640 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:18,640 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:18,640 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:18,641 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:18,641 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:18,641 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:18,642 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:18,644 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:18,645 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:18,646 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:18,646 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:18,647 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:18,647 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:18,648 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:18,648 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:18,649 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:18,649 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:18,649 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:19,079 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:20,391 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:20,393 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:20,393 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:20,393 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:20,394 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:20,394 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:20,394 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:20,395 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:20,395 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:20,395 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:20,395 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:20,396 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:20,396 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:20,396 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:20,397 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:20,397 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:20,397 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:20,398 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:20,398 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:20,398 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:20,399 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:20,400 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:20,400 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:20,400 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:20,402 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:20,402 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:20,402 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:20,403 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:20,403 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:20,404 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:20,404 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:20,404 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:20,404 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:20,406 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:20,406 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:20,407 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:20,407 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:20,407 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:20,407 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:20,407 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:20,408 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:20,408 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:20,409 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:20,411 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:20,412 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:20,905 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:22,173 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:22,173 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:22,174 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:22,174 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:22,175 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:22,175 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:22,176 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:22,176 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:22,177 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:22,177 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:22,177 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:22,178 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:22,178 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:22,178 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:22,179 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:22,179 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:22,180 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:22,180 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:22,180 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:22,182 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:22,183 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:22,183 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:22,183 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:22,184 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:22,184 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:22,184 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:22,185 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:22,185 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:22,185 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:22,186 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:22,186 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:22,187 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:22,187 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:22,187 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:22,188 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:22,188 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:22,188 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:22,188 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:22,188 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:22,189 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:22,189 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:22,189 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:22,190 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:22,190 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:22,190 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:22,639 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:24,063 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:24,063 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:24,063 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:24,063 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:24,064 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:24,064 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:24,064 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:24,064 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:24,064 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:24,066 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:24,066 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:24,066 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:24,066 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:24,067 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:24,067 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:24,068 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:24,068 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:24,068 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:24,069 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:24,069 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:24,070 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:24,070 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:24,071 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:24,071 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:24,072 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:24,072 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:24,073 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:24,073 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:24,074 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:24,082 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:24,083 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:24,083 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:24,084 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:24,084 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:24,084 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:24,085 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:24,085 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:24,085 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:24,085 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:24,087 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:24,087 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:24,087 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:24,087 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:24,088 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:24,088 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:24,558 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:25,884 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:25,885 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:25,886 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:25,887 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:25,887 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:25,888 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:25,888 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:25,889 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:25,889 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:25,891 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:25,891 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:25,892 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:25,893 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:25,893 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:25,895 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:25,896 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:25,896 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:25,896 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:25,897 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:25,899 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:25,899 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:25,899 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:25,900 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:25,900 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:25,901 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:25,901 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:25,902 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:25,902 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:25,903 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:25,903 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:25,904 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:25,904 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:25,905 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:25,905 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:25,906 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:25,907 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:25,908 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:25,908 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:25,909 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:25,909 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:25,910 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:25,910 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:25,911 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:25,912 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:25,913 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:26,421 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:27,806 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:27,807 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:27,809 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:27,809 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:27,809 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:27,809 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:27,811 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:27,811 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:27,811 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:27,811 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:27,812 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:27,813 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:27,813 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:27,813 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:27,813 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:27,814 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:27,814 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:27,814 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:27,815 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:27,815 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:27,815 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:27,815 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:27,816 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:27,816 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:27,817 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:27,817 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:27,817 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:27,818 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:27,818 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:27,819 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:27,819 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:27,819 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:27,819 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:27,821 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:27,821 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:27,822 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:27,822 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:27,822 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:27,823 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:27,823 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:27,824 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:27,824 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:27,824 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:27,825 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:27,826 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:28,299 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:29,701 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:29,701 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:29,703 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:29,703 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:29,703 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:29,704 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:29,704 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:29,704 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:29,705 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:29,705 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:29,705 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:29,706 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:29,707 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:29,707 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:29,708 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:29,708 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:29,708 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:29,708 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:29,709 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:29,709 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:29,709 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:29,710 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:29,710 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:29,711 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:29,712 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:29,712 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:29,713 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:29,713 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:29,713 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:29,713 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:29,714 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:29,714 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:29,715 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:29,715 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:29,716 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:29,716 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:29,717 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:29,717 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:29,718 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:29,718 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:29,718 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:29,718 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:29,719 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:29,719 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:29,720 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:30,231 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:31,574 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:31,575 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:31,575 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:31,577 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:31,577 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:31,577 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:31,578 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:31,578 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:31,578 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:31,579 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:31,579 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:31,579 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:31,580 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:31,580 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:31,581 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:31,581 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:31,581 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:31,581 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:31,582 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:31,582 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:31,583 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:31,583 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:31,583 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:31,584 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:31,584 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:31,585 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:31,585 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:31,586 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:31,587 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:31,587 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:31,588 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:31,588 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:31,588 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:31,589 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:31,589 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:31,590 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:31,590 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:31,591 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:31,592 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:31,592 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:31,592 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:31,593 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:31,593 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:31,594 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:31,594 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:32,102 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:33,507 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:33,507 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:33,509 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:33,510 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:33,510 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:33,511 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:33,511 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:33,511 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:33,512 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:33,512 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:33,512 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:33,513 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:33,513 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:33,513 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:33,514 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:33,515 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:33,515 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:33,516 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:33,516 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:33,517 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:33,517 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:33,518 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:33,518 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:33,519 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:33,519 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:33,520 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:33,520 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:33,520 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:33,520 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:33,521 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:33,521 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:33,521 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:33,522 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:33,523 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:33,523 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:33,525 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:33,525 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:33,525 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:33,525 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:33,526 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:33,526 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:33,527 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:33,527 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:33,528 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:33,528 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:34,052 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:35,547 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:35,548 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:35,548 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:35,548 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:35,549 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:35,549 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:35,549 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:35,549 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:35,550 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:35,550 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:35,551 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:35,551 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:35,552 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:35,552 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:35,553 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:35,554 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:35,554 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:35,555 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:35,555 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:35,555 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:35,556 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:35,556 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:35,558 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:35,558 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:35,559 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:35,559 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:35,559 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:35,559 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:35,560 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:35,560 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:35,560 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:35,561 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:35,561 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:35,562 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:35,562 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:35,563 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:35,563 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:35,564 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:35,564 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:35,565 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:35,566 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:35,566 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:35,567 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:35,568 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:35,568 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:36,105 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:37,440 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:37,442 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:37,442 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:37,443 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:37,443 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:37,443 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:37,443 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:37,443 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:37,445 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:37,445 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:37,445 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:37,446 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:37,446 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:37,446 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:37,446 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:37,447 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:37,447 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:37,447 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:37,447 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:37,448 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:37,448 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:37,448 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:37,448 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:37,448 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:37,449 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:37,449 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:37,449 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:37,450 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:37,450 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:37,450 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:37,450 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:37,450 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:37,451 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:37,451 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:37,451 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:37,451 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:37,451 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:37,452 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:37,452 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:37,453 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:37,453 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:37,453 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:37,453 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:37,453 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:37,455 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs
+2025-06-04 14:27:37,971 - SystemLogger - INFO - User query: name of stu0004?
+2025-06-04 14:27:39,651 - SystemLogger - INFO - Initialized customer_support DomainConfig
+2025-06-04 14:27:39,652 - SystemLogger - INFO - Loaded domain config for 'customer_support' is valid.
+2025-06-04 14:27:39,663 - SystemLogger - INFO - Initialized entertainment DomainConfig
+2025-06-04 14:27:39,667 - SystemLogger - INFO - Loaded domain config for 'entertainment' is valid.
+2025-06-04 14:27:39,668 - SystemLogger - INFO - Initialized gaming DomainConfig
+2025-06-04 14:27:39,669 - SystemLogger - INFO - Loaded domain config for 'gaming' is valid.
+2025-06-04 14:27:39,677 - SystemLogger - INFO - Initialized legal DomainConfig
+2025-06-04 14:27:39,677 - SystemLogger - INFO - Loaded domain config for 'legal' is valid.
+2025-06-04 14:27:39,679 - SystemLogger - INFO - Initialized marketing DomainConfig
+2025-06-04 14:27:39,679 - SystemLogger - INFO - Loaded domain config for 'marketing' is valid.
+2025-06-04 14:27:39,680 - SystemLogger - INFO - Initialized logistics DomainConfig
+2025-06-04 14:27:39,680 - SystemLogger - INFO - Loaded domain config for 'logistics' is valid.
+2025-06-04 14:27:39,683 - SystemLogger - INFO - Initialized manufacturing DomainConfig
+2025-06-04 14:27:39,684 - SystemLogger - INFO - Loaded domain config for 'manufacturing' is valid.
+2025-06-04 14:27:39,685 - SystemLogger - INFO - Initialized real estate DomainConfig
+2025-06-04 14:27:39,685 - SystemLogger - INFO - Loaded domain config for 'real_estate' is valid.
+2025-06-04 14:27:39,687 - SystemLogger - INFO - Initialized agriculture DomainConfig
+2025-06-04 14:27:39,687 - SystemLogger - INFO - Loaded domain config for 'agriculture' is valid.
+2025-06-04 14:27:39,688 - SystemLogger - INFO - Initialized energy DomainConfig
+2025-06-04 14:27:39,701 - SystemLogger - INFO - Loaded domain config for 'energy' is valid.
+2025-06-04 14:27:39,703 - SystemLogger - INFO - Initialized hospitality DomainConfig
+2025-06-04 14:27:39,705 - SystemLogger - INFO - Loaded domain config for 'hospitality' is valid.
+2025-06-04 14:27:39,712 - SystemLogger - INFO - Initialized automobile DomainConfig
+2025-06-04 14:27:39,722 - SystemLogger - INFO - Loaded domain config for 'automobile' is valid.
+2025-06-04 14:27:39,730 - SystemLogger - INFO - Initialized telecommunications DomainConfig
+2025-06-04 14:27:39,730 - SystemLogger - INFO - Loaded domain config for 'telecommunications' is valid.
+2025-06-04 14:27:39,733 - SystemLogger - INFO - Initialized government DomainConfig
+2025-06-04 14:27:39,734 - SystemLogger - INFO - Loaded domain config for 'government' is valid.
+2025-06-04 14:27:39,735 - SystemLogger - INFO - Initialized food & beverage DomainConfig
+2025-06-04 14:27:39,736 - SystemLogger - INFO - Loaded domain config for 'food_beverage' is valid.
+2025-06-04 14:27:39,736 - SystemLogger - INFO - Initialized IT Services DomainConfig
+2025-06-04 14:27:39,738 - SystemLogger - INFO - Loaded domain config for 'it_services' is valid.
+2025-06-04 14:27:39,743 - SystemLogger - INFO - Initialized event management DomainConfig
+2025-06-04 14:27:39,743 - SystemLogger - INFO - Loaded domain config for 'event_management' is valid.
+2025-06-04 14:27:39,744 - SystemLogger - INFO - Initialized insurance DomainConfig
+2025-06-04 14:27:39,744 - SystemLogger - INFO - Loaded domain config for 'insurance' is valid.
+2025-06-04 14:27:39,745 - SystemLogger - INFO - Initialized retail DomainConfig
+2025-06-04 14:27:39,746 - SystemLogger - INFO - Loaded domain config for 'retail' is valid.
+2025-06-04 14:27:39,747 - SystemLogger - INFO - Initialized HR Resources DomainConfig
+2025-06-04 14:27:39,751 - SystemLogger - INFO - Loaded domain config for 'hr_resources' is valid.
+2025-06-04 14:27:39,752 - SystemLogger - INFO - Education DomainConfig initialized.
+2025-06-04 14:27:39,753 - SystemLogger - INFO - Loaded domain config for 'education' is valid.
+2025-06-04 14:27:39,753 - SystemLogger - INFO - Initialized generic DomainConfig
+2025-06-04 14:27:39,759 - SystemLogger - INFO - Loaded domain config for 'generic' is valid.
+2025-06-04 14:27:39,762 - SystemLogger - INFO - Initialized DomainDetector with 22 domain configs

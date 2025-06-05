@@ -1,0 +1,151 @@
+{
+  "info": {
+    "name": "Document AI API",
+    "_postman_id": "12345-abcde-67890-fghij",
+    "description": "Collection for document AI features like uploading, summarizing, analyzing, and chatting with files.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Upload File",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": ""
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/upload",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["upload"]
+        }
+      }
+    },
+    {
+      "name": "Train Model",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"model_name\": \"custom-model\",\n  \"training_data_id\": \"your-file-id\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/train",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["train"]
+        }
+      }
+    },
+    {
+      "name": "Chat with File",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"file_id\": \"your-file-id\",\n  \"question\": \"What is the summary?\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/chat",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["chat"]
+        }
+      }
+    },
+    {
+      "name": "Preview File",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"file_id\": \"your-file-id\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/preview",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["preview"]
+        }
+      }
+    },
+    {
+      "name": "Analyze Document",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"file_id\": \"your-file-id\",\n  \"analysis_type\": \"ner\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/analyzeDocument",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["analyzeDocument"]
+        }
+      }
+    },
+    {
+      "name": "Generate Summary",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"file_id\": \"your-file-id\",\n  \"length\": \"short\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/summary",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["summary"]
+        }
+      }
+    },
+    {
+      "name": "Feedback",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"file_id\": \"your-file-id\",\n  \"question\": \"Your question\",\n  \"user_feedback\": \"Correct / Incorrect\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/feedback",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["feedback"]
+        }
+      }
+    },
+    {
+      "name": "Download File",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/download?file_id=your-file-id",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["download"],
+          "query": [
+            { "key": "file_id", "value": "your-file-id" }
+          ]
+        }
+      }
+    }
+  ]
+}

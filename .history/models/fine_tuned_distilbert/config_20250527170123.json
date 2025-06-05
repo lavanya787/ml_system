@@ -1,0 +1,218 @@
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+import numpy as np
+from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import r2_score, accuracy_score
+from domain_detector import DomainDetector
+from utils.logger import SystemLogger
+from typing import Dict, Any
+import io
+import logging
+from datetime import datetime
+
+# Initialize logger
+logger = SystemLogger()
+
+# Set up logging for Streamlit display
+log_buffer = io.StringIO()
+handler = logging.StreamHandler(log_buffer)
+handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+logging.getLogger().addHandler(handler)
+logging.getLogger().setLevel(logging.INFO)
+
+st.set_page_config(page_title="Enhanced ML System", layout="wide")
+
+# Initialize DomainDetector
+@st.cache_resource
+def get_detector():
+    return DomainDetector(logger=logger)
+
+detector = get_detector()
+
+st.title("📊 Enhanced ML System")
+
+# Sidebar for navigation
+st.sidebar.header("Navigation")
+page = st.sidebar.selectbox("Select Feature", ["Data Analysis", "Model Training", "Predictions", "System Logs"])
+
+# File uploader
+uploaded_file = st.file_uploader("Upload CSV Dataset", type="csv", key="file_uploader")
+data = None
+detection_result = None
+models = st.session_state.get('models', {})
+
+if uploaded_file:
+    try:
+        data = pd.read_csv(uploaded_file)
+        st.success(f"Dataset loaded: {data.shape[0]} rows, {data.shape[1]} columns")
+        detection_result = detector.detect_domain(data)
+        st.session_state['detection_result'] = detection_result
+        st.session_state['data'] = data
+        logger.log_info(f"Dataset uploaded: {uploaded_file.name}")
+    except Exception as e:
+        st.error(f"Error loading dataset: {str(e)}")
+        logger.log_error(f"Error loading dataset: {str(e)}")
+
+# Data Analysis
+if page == "Data Analysis" and data is not None:
+    st.header("📈 Data Analysis")
+    
+    # Domain detection results
+    st.subheader("Domain Detection")
+    if detection_result['domain']:
+        st.write(f"**Detected Domain**: {detection_result['domain'].replace('_', ' ').title()}")
+        st.write(f"**Confidence**: {detection_result['confidence']:.2f}")
+        st.write(f"**Detected Features**: {detection_result['features']}")
+    else:
+        st.warning("No domain detected with sufficient confidence. Using generic analysis.")
+    
+    # Dataset summary
+    st.subheader("Dataset Summary")
+    st.write("**Columns**: ", data.columns.tolist())
+    st.write("**Data Types**:")
+    st.dataframe(data.dtypes.to_frame().T)
+    st.write("**Sample Data**:")
+    st.dataframe(data.head())
+
+    # Visualizations
+    st.subheader("Exploratory Visualizations")
+    numeric_cols = data.select_dtypes(include=[np.number]).columns
+    if numeric_cols.empty:
+        st.warning("No numeric columns for visualization.")
+    else:
+        col1, col2 = st.columns(2)
+        with col1:
+            x_col = st.selectbox("Select X-axis", numeric_cols, key="x_axis")
+        with col2:
+            y_col = st.selectbox("Select Y-axis", numeric_cols, key="y_axis")
+        
+        if x_col and y_col:
+            fig = px.scatter(data, x=x_col, y=y_col, title=f"{y_col} vs. {x_col}")
+            st.plotly_chart(fig)
+        
+        # Histogram
+        hist_col = st.selectbox("Select column for histogram", numeric_cols, key="hist_col")
+        fig = px.histogram(data, x=hist_col, title=f"Distribution of {hist_col}")
+        st.plotly_chart(fig)
+
+    # Domain-specific analysis
+    if detection_result['domain'] and detection_result['config']:
+        st.subheader("Domain-Specific Analysis")
+        try:
+            detection_result['config'].create_analysis(data, {})
+        except Exception as e:
+            st.error(f"Error in domain-specific analysis: {str(e)}")
+            logger.log_error(f"Domain analysis error: {str(e)}")
+
+# Model Training
+elif page == "Model Training" and data is not None:
+    st.header("🛠️ Model Training")
+    
+    if detection_result['domain']:
+        st.write(f"Training for domain: {detection_result['domain'].replace('_', ' ').title()}")
+    else:
+        st.warning("No domain detected. Training on generic features.")
+
+    target_col = st.selectbox("Select Target Column", data.columns, key="target_col")
+    model_type = st.selectbox("Model Type", ["Regression", "Classification"], key="model_type")
+    
+    if st.button("Train Model"):
+        try:
+            features = [col for col in data.columns if col != target_col and data[col].dtype in ['int64', 'float64']]
+            if not features:
+                st.error("No valid numeric features for training.")
+                logger.log_error("No valid numeric features for training")
+            else:
+                X = data[features]
+                y = data[target_col]
+                
+                X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+                
+                if model_type == "Regression":
+                    model = RandomForestRegressor(n_estimators=100, random_state=42)
+                    model.fit(X_train, y_train)
+                    y_pred = model.predict(X_test)
+                    score = r2_score(y_test, y_pred)
+                    models[target_col] = {'model': model, 'model_type': 'regression', 'r2': score}
+                    st.success(f"Model trained! R² Score: {score:.2f}")
+                    logger.log_info(f"Regression model trained for {target_col}, R²: {score:.2f}")
+                
+                else:
+                    model = RandomForestClassifier(n_estimators=100, random_state=42)
+                    model.fit(X_train, y_train)
+                    y_pred = model.predict(X_test)
+                    score = accuracy_score(y_test, y_pred)
+                    models[target_col] = {'model': model, 'model_type': 'classification', 'accuracy': score}
+                    st.success(f"Model trained! Accuracy: {score:.2f}")
+                    logger.log_info(f"Classification model trained for {target_col}, Accuracy: {score:.2f}")
+                
+                st.session_state['models'] = models
+        except Exception as e:
+            st.error(f"Error training model: {str(e)}")
+            logger.log_error(f"Model training error: {str(e)}")
+
+# Predictions
+elif page == "Predictions" and data is not None:
+    st.header("📉 Predictions")
+    
+    if not models:
+        st.warning("No trained models available. Please train a model first.")
+    else:
+        st.subheader("Generate Predictions")
+        target_col = st.selectbox("Select Target Column", list(models.keys()), key="pred_target")
+        
+        if st.button("Predict"):
+            try:
+                model_info = models[target_col]
+                features = [col for col in data.columns if col != target_col and data[col].dtype in ['int64', 'float64']]
+                X = data[features]
+                
+                predictions = model_info['model'].predict(X)
+                data['Predictions'] = predictions
+                
+                st.write("**Prediction Results**:")
+                st.dataframe(data[[target_col, 'Predictions']].head())
+                
+                fig = px.histogram(data, x='Predictions', title=f"Prediction Distribution for {target_col}")
+                st.plotly_chart(fig)
+                
+                logger.log_info(f"Predictions generated for {target_col}")
+                
+                # Domain-specific prediction query
+                if detection_result['domain'] and detection_result['config']:
+                    query = f"Predict {target_col}"
+                    result = detection_result['config'].handle_prediction_query(query, data, models)
+                    st.write("**Domain-Specific Prediction Summary**:")
+                    st.write(result.get('summary', 'No summary available'))
+                    if 'visualization' in result:
+                        st.plotly_chart(result['visualization'])
+            except Exception as e:
+                st.error(f"Error generating predictions: {str(e)}")
+                logger.log_error(f"Prediction error: {str(e)}")
+
+# System Logs
+elif page == "System Logs":
+    st.header("🧾 System Logs")
+    
+    log_buffer.seek(0)
+    logs = log_buffer.getvalue()
+    
+    if logs:
+        log_lines = logs.strip().split('\n')
+        log_level = st.selectbox("Filter by Level", ["All", "INFO", "WARNING", "ERROR"], key="log_filter")
+        
+        filtered_logs = log_lines
+        if log_level != "All":
+            filtered_logs = [line for line in log_lines if log_level in line]
+        
+        st.text_area("Logs", value="\n".join(filtered_logs), height=400)
+    else:
+        st.info("No logs available.")
+
+# Display domain detection status
+if data is not None and detection_result:
+    st.sidebar.subheader("Domain Detection")
+    st.sidebar.write(f"Domain: {detection_result['domain'] or 'None'}")
+    st.sidebar.write(f"Confidence: {detection_result['confidence']:.2f}")

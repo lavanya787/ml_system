@@ -1,0 +1,9 @@
+{
+    "file_id": "e5f25377-8235-43a0-9266-426b5703b2b2",
+    "original_filename": "datasett.csv",
+    "model_type": "random_forest",
+    "accuracy": 0.8315,
+    "num_rows": 10000,
+    "num_columns": 16,
+    "timestamp": "2025-05-31T12:28:25.476273"
+}

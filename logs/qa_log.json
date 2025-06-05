@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp": "2025-06-03T14:18:37.321250",
+    "question": "give me the list of students?",
+    "answer": "No data loaded. Please train a model first.",
+    "domain": "education",
+    "has_answer": true
+  }
+]
