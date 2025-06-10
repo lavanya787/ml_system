@@ -1,0 +1,8 @@
+# .gitignore
+
+mlsystem/Lib/
+mlsystem/Library/
+*.dll
+*.lib
+*.pyd
+*.whl

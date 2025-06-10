@@ -1,19 +1,25 @@
-#backend
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, render_template, redirect, url_for
+from flask_cors import CORS
+from supabase import create_client, Client
+import bcrypt
+import uuid
+from datetime import datetime
+import re
+import os
 from werkzeug.utils import secure_filename
 import pandas as pd
 import os
 import uuid
 import json
 import joblib
-from datetime import datetime
+import faiss
+
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from sentence_transformers import SentenceTransformer
-import faiss
-
+from auth_routes import auth_bp, login_required
 from backend.utils.file_parser import (
     allowed_file, parse_file, extract_text_docx, extract_text_pdf, extract_text_image
 )
@@ -21,8 +27,14 @@ from backend.utils.nlp_utils import summarize_text, extract_keywords, extract_na
 from backend.utils.pdf_generator import generate_pdf_report, generate_pdf_summary
 from backend.utils.model_utils import train_model
 from backend.utils.logger import save_training_log
-# --- Setup ---
+
 app = Flask(__name__)
+CORS(app)
+
+# Supabase setup
+SUPABASE_URL = "https://uctyxchurvievzvhthru.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVjdHl4Y2h1cnZpZXZ6dmh0aHJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU0ODk0MDIsImV4cCI6MjA2MTA2NTQwMn0.YytXX-q4QDO_vY9f1e_P-UWc6v6860kcsbe_bTZVgCI"
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 UPLOAD_FOLDER = 'uploads'
 ANALYSIS_FOLDER = 'analysis'
@@ -43,8 +55,15 @@ app.config['LOGS_FOLDER'] = LOGS_FOLDER
 
 # In-memory chat history
 conversation_store = {}
+models={}
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
+# Function to validate UUID
+def is_valid_uuid(val):
+    uuid_pattern = re.compile(
+        r'^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$'
+    )
+    return bool(uuid_pattern.match(val))
 def save_faiss_index(file_id, texts):
     embeddings = embedding_model.encode(texts)
     index = faiss.IndexFlatL2(embeddings.shape[1])
@@ -67,67 +86,259 @@ def generate_answer_with_context(question, chunks):
     return f"Answer based on: {context[:300]}...\n\n[Mock Answer] for: {question}"
 
 # --- Routes ---
-@app.route("/")
-def home():
-    return jsonify({"message": "Welcome to the File Analysis & ML API"})
+# Serve the main page
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/api/register', methods=['POST'])
+def register():
+    data = request.get_json()
+    username = data.get('username')
+    email = data.get('email')
+    password = data.get('password')
+
+    # Check if user already exists
+    user = supabase.table('users').select('*').eq('email', email).execute()
+    print(f"Checking if user exists with email {email}: {user.data}")  # Debug log
+    if user.data:
+        return jsonify({'message': 'User already exists'}), 400
+
+    # Hash password
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
+
+    # Generate unique user ID
+    user_id = str(uuid.uuid4())
+    print(f"Generated user_id for registration: {user_id}")  # Debug log
+    if not is_valid_uuid(user_id):
+        print(f"ERROR: Generated user_id is not a valid UUID: {user_id}")
+        return jsonify({'message': 'Internal server error: Invalid user_id generated'}), 500
+
+    # Store user in Supabase
+    registration_time = datetime.utcnow().isoformat()
+    new_user = {
+        'user_id': user_id,
+        'username': username,
+        'email': email,
+        'password': hashed_password,
+        'registration_time': registration_time
+    }
+    print(f"Storing user in Supabase: {new_user}")  # Debug log
+    try:
+        supabase.table('users').insert(new_user).execute()
+    except Exception as e:
+        print(f"Error inserting user into Supabase: {e}")
+        return jsonify({'message': 'Error storing user in database'}), 500
 
 
-@app.route("/upload", methods=["POST"])
+@app.route('/api/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    email = data.get('email')
+    password = data.get('password')
+
+    # Fetch user from Supabase
+    user = supabase.table('users').select('*').eq('email', email).execute()
+    print(f"Supabase response for user lookup: {user.data}")  # Debug log
+    if not user.data:
+        return jsonify({'message': 'User not found'}), 404
+
+    user_data = user.data[0]
+    # Verify password
+    if not bcrypt.checkpw(password.encode('utf-8'), user_data['password'].encode('utf-8')):
+        return jsonify({'message': 'Incorrect password'}), 401
+
+    # Update last login time
+    login_time = datetime.utcnow().isoformat()
+    try:
+        supabase.table('users').update({'last_login': login_time}).eq('email', email).execute()
+    except Exception as e:
+        print(f"Error updating last login time in Supabase: {e}")
+        return jsonify({'message': 'Error updating login time'}), 500
+
+    # Redirect to Streamlit app with user_id as a query parameter
+    user_id = user_data['user_id']
+    print(f"Retrieved user_id for login: {user_id}")  # Debug log
+    if not is_valid_uuid(user_id):
+        print(f"ERROR: Retrieved user_id is not a valid UUID: {user_id}")
+        return jsonify({'message': 'Internal server error: Invalid user_id retrieved'}), 500
+
+    streamlit_url = f"http://localhost:8501/?user_id={user_id}"
+    print(f"Redirecting to Streamlit app after login: {streamlit_url}")  # Debug log
+    return jsonify({'message': 'Login successful', 'redirect': streamlit_url}), 200
+# --- File Upload Routes ---
+@app.route("/api/upload", methods=["POST"])
 def upload_file():
+    """File upload endpoint"""
     if "file" not in request.files:
         return jsonify({"error": "No file part"}), 400
+    
     file = request.files["file"]
     if file.filename == "":
         return jsonify({"error": "No selected file"}), 400
     
     if file and allowed_file(file.filename, ALLOWED_EXTENSIONS):
         file_id = str(uuid.uuid4())
-        filename = f"{file_id}_{file.filename}"
-        file_path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
+        filename = secure_filename(file.filename)
+        saved_filename = f"{file_id}_{filename}"
+        file_path = os.path.join(app.config["UPLOAD_FOLDER"], saved_filename)
         file.save(file_path)
-        return jsonify({"file_id": file_id, "filename": filename})
+        
+        # For text-based files, create FAISS index for chat functionality
+        if filename.lower().endswith(('.txt', '.pdf', '.docx')):
+            try:
+                if filename.lower().endswith('.txt'):
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                    chunks = [content[i:i+1000] for i in range(0, len(content), 1000)]
+                elif filename.lower().endswith('.pdf'):
+                    content = extract_text_pdf(file_path)
+                    chunks = [text for _, text in content if text.strip()]
+                elif filename.lower().endswith('.docx'):
+                    content = extract_text_docx(file_path)
+                    chunks = [text for _, text in content if text.strip()]
+                
+                if chunks:
+                    save_faiss_index(file_id, chunks)
+            except Exception as e:
+                print(f"Error creating index: {e}")
+        
+        return jsonify({"file_id": file_id, "filename": saved_filename}), 200
     else:
         return jsonify({"error": "File type not allowed"}), 400
+
+# --- Chat Routes ---
 @app.route("/api/chat", methods=["POST"])
 def chat_with_file():
-    data = request.get_json()
-    file_id = data.get("file_id")
-    question = data.get("question")
+    """Chat with uploaded file using RAG"""
+    try:
+        data = request.get_json()
+        file_id = data.get("file_id")
+        question = data.get("question")
 
-    if not file_id or not question:
-        return jsonify({"error": "file_id and question required"}), 400
+        if not file_id or not question:
+            return jsonify({"error": "file_id and question required"}), 400
 
-    history = conversation_store.get(file_id, [])
-    index, texts = load_faiss_index(file_id)
-    if not index:
-        return jsonify({"error": "No index found for this file_id"}), 404
+        # Load conversation history
+        history = conversation_store.get(file_id, [])
+        
+        # Load FAISS index
+        index, texts = load_faiss_index(file_id)
+        if not index:
+            return jsonify({"error": "No searchable content found for this file"}), 404
 
-    question_vec = embedding_model.encode([question])
-    D, I = index.search(question_vec, 3)
-    top_chunks = [texts[i] for i in I[0]]
+        # Search for relevant chunks
+        question_vec = embedding_model.encode([question])
+        D, I = index.search(question_vec, 3)
+        top_chunks = [texts[i] for i in I[0] if i < len(texts)]
 
-    full_history = "\n".join([f"Q: {q}\nA: {a}" for q, a in history])
-    final_answer = generate_answer_with_context(question, top_chunks)
-    history.append((question, final_answer))
-    conversation_store[file_id] = history
+        # Generate answer
+        answer = generate_answer_with_context(question, top_chunks)
+        
+        # Update conversation history
+        history.append({"question": question, "answer": answer})
+        conversation_store[file_id] = history
 
-    return jsonify({"answer": final_answer, "history": history})
+        return jsonify({"answer": answer, "history": history}), 200
+    except Exception as e:
+        return jsonify({"error": f"Chat error: {str(e)}"}), 500
 
-@app.route("/preview", methods=["POST"])
+# --- File Analysis Routes ---
+@app.route("/api/preview", methods=["POST"])
 def preview_file():
+    """Preview CSV file data"""
     try:
         data = request.json
-        filename = data["filename"]
+        filename = data.get("filename")
+        
+        if not filename:
+            return jsonify({"error": "Filename required"}), 400
+            
         file_path = os.path.join(UPLOAD_FOLDER, filename)
+        
+        if not os.path.exists(file_path):
+            return jsonify({"error": "File not found"}), 404
+            
         df = parse_file(file_path)
         preview_path = os.path.join(PREVIEW_FOLDER, f"{filename}_preview.csv")
-        df.head().to_csv(preview_path, index=False)
-        return jsonify({"columns": df.columns.tolist(), "preview_path": preview_path})
+        df.head(10).to_csv(preview_path, index=False)
+        
+        return jsonify({
+            "columns": df.columns.tolist(),
+            "preview_path": preview_path,
+            "shape": df.shape
+        }), 200
     except Exception as e:
-        return jsonify({"error": str(e)}), 500 
+        return jsonify({"error": f"Preview error: {str(e)}"}), 500
 
-@app.route('/train', methods=['POST'])
+@app.route('/api/analyze', methods=['POST'])
+def analyze_file():
+    """Analyze document and extract information"""
+    if 'file' not in request.files:
+        return jsonify({"error": "No file provided"}), 400
+
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({"error": "No file selected"}), 400
+
+    if not allowed_file(file.filename, ALLOWED_EXTENSIONS):
+        return jsonify({"error": "Unsupported file type"}), 400
+
+    try:
+        filename = secure_filename(file.filename)
+        file_id = str(uuid.uuid4())
+        saved_path = os.path.join(app.config['UPLOAD_FOLDER'], f"{file_id}_{filename}")
+        file.save(saved_path)
+
+        # Extract text based on file type
+        ext = filename.rsplit('.', 1)[1].lower()
+        if ext == 'docx':
+            extracted = extract_text_docx(saved_path)
+        elif ext == 'pdf':
+            extracted = extract_text_pdf(saved_path)
+        elif ext in ['png', 'jpg', 'jpeg']:
+            extracted = extract_text_image(saved_path)
+        else:
+            return jsonify({"error": "Unsupported format"}), 400
+
+        # Process extracted text
+        full_text = '\n'.join([text for _, text in extracted])
+        
+        if not full_text.strip():
+            return jsonify({"error": "No text could be extracted from the file"}), 400
+            
+        summary = summarize_text(full_text)
+        keywords = extract_keywords(full_text)
+        entities = extract_named_entities(full_text)
+        
+        # Generate PDF report
+        pdf_path = generate_pdf_report(file_id, extracted, summary, keywords, entities)
+
+        # Create analysis log
+        analysis_log = {
+            "file_id": file_id,
+            "filename": filename,
+            "summary": summary,
+            "keywords": keywords,
+            "named_entities": entities,
+            "extracted_sections": len(extracted),
+            "report_pdf": f"/api/download/analysis/{file_id}_summary.pdf",
+            "timestamp": datetime.utcnow().isoformat()
+        }
+
+        # Save analysis log
+        log_path = os.path.join(app.config['ANALYSIS_FOLDER'], f"{file_id}_log.json")
+        with open(log_path, 'w') as f:
+            json.dump(analysis_log, f, indent=4)
+
+        return jsonify(analysis_log), 200
+    except Exception as e:
+        return jsonify({"error": f"Analysis error: {str(e)}"}), 500
+
+# --- Machine Learning Routes ---
+@app.route('/api/train', methods=['POST'])
 def train_model():
+    """Train machine learning model"""
     if 'file' not in request.files:
         return jsonify({"error": "No file part"}), 400
 
@@ -137,243 +348,175 @@ def train_model():
     if file.filename == '':
         return jsonify({"error": "No selected file"}), 400
 
-    if file and allowed_file(file.filename, ALLOWED_EXTENSIONS):
+    if not allowed_file(file.filename, ALLOWED_EXTENSIONS):
+        return jsonify({"error": "Unsupported file type"}), 400
+
+    try:
         filename = secure_filename(file.filename)
         file_id = str(uuid.uuid4())
         saved_filename = f"{file_id}_{filename}"
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], saved_filename)
         file.save(filepath)
 
-        try:
-            df = parse_file(filepath)
-            if df.shape[0] < 5 or df.shape[1] < 2:
-                return jsonify({"error": "Insufficient data for training"}), 400
+        # Parse file
+        df = parse_file(filepath)
+        if df.shape[0] < 5 or df.shape[1] < 2:
+            return jsonify({"error": "Insufficient data for training"}), 400
 
-            preview_path = os.path.join(PREVIEW_FOLDER, f"{file_id}_preview.csv")
-            df.head(10).to_csv(preview_path, index=False)
+        # Create preview
+        preview_path = os.path.join(PREVIEW_FOLDER, f"{file_id}_preview.csv")
+        df.head(10).to_csv(preview_path, index=False)
 
-            X = df.iloc[:, :-1]
-            y = df.iloc[:, -1]
+        # Prepare data (assuming last column is target)
+        X = df.iloc[:, :-1]
+        y = df.iloc[:, -1]
 
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+        # Handle non-numeric data
+        X = pd.get_dummies(X, drop_first=True)
+        
+        # Split data
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-            if model_type == "random_forest":
-                model = RandomForestClassifier()
-            elif model_type == "logistic_regression":
-                model = LogisticRegression(max_iter=1000)
-            else:
-                return jsonify({"error": "Unsupported model type"}), 400
+        # Train model
+        if model_type == "random_forest":
+            model = RandomForestClassifier(random_state=42)
+        elif model_type == "logistic_regression":
+            model = LogisticRegression(max_iter=1000, random_state=42)
+        else:
+            return jsonify({"error": "Unsupported model type"}), 400
 
-            model.fit(X_train, y_train)
-            y_pred = model.predict(X_test)
-            accuracy = accuracy_score(y_test, y_pred)
+        model.fit(X_train, y_train)
+        y_pred = model.predict(X_test)
+        accuracy = accuracy_score(y_test, y_pred)
 
-            model_path = os.path.join(MODEL_FOLDER, f"{file_id}_{model_type}.pkl")
-            joblib.dump(model, model_path)
+        # Save model
+        model_path = os.path.join(MODEL_FOLDER, f"{file_id}_{model_type}.pkl")
+        joblib.dump(model, model_path)
 
-            save_training_log(file_id, filename, model_type, accuracy, df.shape)
+        # Store model info for predictions
+        models[file_id] = {
+            'model': model,
+            'columns': X.columns.tolist(),
+            'model_type': model_type
+        }
 
-            return jsonify({
-                "message": "Model trained successfully",
-                "accuracy": accuracy,
-                "model_download_url": f"/api/download/model/{file_id}_{model_type}.pkl",
-                "preview_download_url": f"/api/download/preview/{file_id}_preview.csv"
-            })
+        # Save training log
+        save_training_log(file_id, filename, model_type, accuracy, df.shape)
 
-        except NotImplementedError as e:
-            return jsonify({"error": str(e)}), 501
-        except Exception as e:
-            return jsonify({"error": str(e)}), 500
+        return jsonify({
+            "message": "Model trained successfully",
+            "file_id": file_id,
+            "accuracy": accuracy,
+            "model_download_url": f"/api/download/model/{file_id}_{model_type}.pkl",
+            "preview_download_url": f"/api/download/preview/{file_id}_preview.csv"
+        }), 200
 
-    return jsonify({"error": "Unsupported file type"}), 400
-
-@app.route('/analyze-doc', methods=['POST'])
-def analyze_doc():
-    if 'file' not in request.files:
-        return jsonify({"error": "No file part"}), 400
-
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify({"error": "No selected file"}), 400
-
-    if file and allowed_file(file.filename):
-        filename = secure_filename(file.filename)
-        file_id = str(uuid.uuid4())
-        saved_filename = f"{file_id}_{filename}"
-        filepath = os.path.join(UPLOAD_FOLDER, saved_filename)
-        file.save(filepath)
-
-        try:
-            ext = filename.rsplit('.', 1)[1].lower()
-
-            if ext != 'docx':
-                return jsonify({"error": "Only .docx supported for heading-style NLP analysis"}), 400
-
-            doc = docx.Document(filepath)
-            sections = extract_sections_by_style(doc)
-
-            analysis = {}
-            for heading, content in sections.items():
-                if len(content) > 30:
-                    summary = summarizer(content, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
-                else:
-                    summary = content
-                analysis[heading] = summary
-
-            json_path = os.path.join(LOGS_FOLDER, f"{file_id}_analysis.json")
-            with open(json_path, 'w') as f:
-                json.dump(analysis, f, indent=4)
-
-            pdf_path = os.path.join(LOGS_FOLDER, f"{file_id}_summary.pdf")
-            generate_pdf_summary(analysis, pdf_path)
-
-            return jsonify({
-                "message": "Analysis completed",
-                "sections": list(analysis.keys()),
-                "json_log_url": f"/api/download/log/{file_id}_analysis.json",
-                "pdf_summary_url": f"/api/download/log/{file_id}_summary.pdf"
-            })
-
-        except Exception as e:
-            return jsonify({"error": str(e)}), 500
-
-    return jsonify({"error": "Unsupported file type"}), 400
-
-@app.route('/api/analyze', methods=['POST'])
-def analyze_file():
-    if 'file' not in request.files:
-        return jsonify({"error": "No file provided"}), 400
-
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify({"error": "No file selected"}), 400
-
-    if not allowed_file(file.filename):
-        return jsonify({"error": "Unsupported file type"}), 400
-
-    filename = secure_filename(file.filename)
-    file_id = str(uuid.uuid4())
-    saved_path = os.path.join(app.config['UPLOAD_FOLDER'], f"{file_id}_{filename}")
-    file.save(saved_path)
-
-    ext = filename.rsplit('.', 1)[1].lower()
-    if ext == 'docx':
-        extracted = extract_text_docx(saved_path)
-    elif ext == 'pdf':
-        extracted = extract_text_pdf(saved_path)
-    elif ext in ['png', 'jpg', 'jpeg']:
-        extracted = extract_text_image(saved_path)
-    else:
-        return jsonify({"error": "Unsupported format"}), 400
-
-    full_text = '\n'.join([text for _, text in extracted])
-    summary = summarize_text(full_text)
-    keywords = extract_keywords(full_text)
-    entities = extract_named_entities(full_text)
-    pdf_path = generate_pdf_report(file_id, extracted, summary, keywords, entities)
-
-    analysis_log = {
-        "file_id": file_id,
-        "filename": filename,
-        "summary": summary,
-        "keywords": keywords,
-        "named_entities": entities,
-        "extracted_sections": extracted,
-        "report_pdf": f"/api/download/report/{file_id}_summary.pdf",
-        "timestamp": datetime.utcnow().isoformat()
-    }
-
-    log_path = os.path.join(app.config['ANALYSIS_FOLDER'], f"{file_id}_log.json")
-    with open(log_path, 'w') as f:
-        json.dump(analysis_log, f, indent=4)
-
-    return jsonify(analysis_log)
-
-@app.route("/generate_summary", methods=["POST"])
-def generate_summary():
-    try:
-        data = request.get_json()
-        summary = data.get("summary", {})
-        file_id = data.get("file_id", str(uuid.uuid4()))
-
-        output_path = os.path.join(ANALYSIS_FOLDER, f"{file_id}_custom_summary.pdf")
-        generate_pdf_summary(summary, output_path)
-        return jsonify({"summary_path": output_path})
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
-@app.route('/predict', methods=['POST'])
+        return jsonify({"error": f"Training error: {str(e)}"}), 500
+
+@app.route('/api/predict', methods=['POST'])
 def predict():
-    json_data = request.json
-    file_id = json_data.get("file_id")
-    features = json_data.get("features")
-
-    if not file_id or file_id not in models:
-        return jsonify({"error": "Model not trained or invalid file_id"}), 400
-    if not features or not isinstance(features, dict):
-        return jsonify({"error": "Features must be provided as a dictionary"}), 400
-
-    model_info = models[file_id]
-    model = model_info['model']
-    expected_features = model_info['columns']
-
-    # Check if all expected features are provided
-    missing_features = [f for f in expected_features if f not in features]
-    if missing_features:
-        return jsonify({"error": f"Missing features: {missing_features}"}), 400
-
-    # Prepare input in correct order
+    """Make predictions using trained model"""
     try:
+        json_data = request.json
+        file_id = json_data.get("file_id")
+        features = json_data.get("features")
+
+        if not file_id or file_id not in models:
+            return jsonify({"error": "Model not found or not trained"}), 400
+        
+        if not features or not isinstance(features, dict):
+            return jsonify({"error": "Features must be provided as a dictionary"}), 400
+
+        model_info = models[file_id]
+        model = model_info['model']
+        expected_features = model_info['columns']
+
+        # Check for missing features
+        missing_features = [f for f in expected_features if f not in features]
+        if missing_features:
+            return jsonify({"error": f"Missing features: {missing_features}"}), 400
+
+        # Prepare input
         input_vector = [features[f] for f in expected_features]
-    except Exception as e:
-        return jsonify({"error": f"Error processing input features: {str(e)}"}), 400
+        input_df = pd.DataFrame([input_vector], columns=expected_features)
 
-    # Convert to DataFrame for sklearn
-    import numpy as np
-    input_df = pd.DataFrame([input_vector], columns=expected_features)
-
-    try:
+        # Make prediction
         prediction = model.predict(input_df)[0]
+        
+        # Get prediction probability if available
+        try:
+            proba = model.predict_proba(input_df)[0].tolist()
+        except:
+            proba = None
+
+        return jsonify({
+            "prediction": str(prediction),
+            "probability": proba
+        }), 200
+
     except Exception as e:
-        return jsonify({"error": f"Error during prediction: {str(e)}"}), 500
+        return jsonify({"error": f"Prediction error: {str(e)}"}), 500
 
-    return jsonify({"prediction": prediction})
-
+# --- Utility Routes ---
 @app.route("/api/feedback", methods=["POST"])
 def feedback():
-    data = request.get_json()
-    file_id = data.get("file_id")
-    question = data.get("question")
-    answer = data.get("answer")
-    feedback = data.get("feedback")  # 'up' or 'down'
+    """Record user feedback"""
+    try:
+        data = request.get_json()
+        file_id = data.get("file_id")
+        question = data.get("question")
+        answer = data.get("answer")
+        feedback_type = data.get("feedback")  # 'positive' or 'negative'
 
-    log = {
-        "file_id": file_id,
-        "question": question,
-        "answer": answer,
-        "feedback": feedback,
-        "timestamp": datetime.utcnow().isoformat()
-    }
+        log = {
+            "file_id": file_id,
+            "question": question,
+            "answer": answer,
+            "feedback": feedback_type,
+            "timestamp": datetime.utcnow().isoformat()
+        }
 
-    feedback_path = os.path.join(LOGS_FOLDER, f"{file_id}_feedback.json")
-    with open(feedback_path, "a") as f:
-        f.write(json.dumps(log) + "\n")
+        feedback_path = os.path.join(LOGS_FOLDER, f"{file_id}_feedback.json")
+        with open(feedback_path, "a") as f:
+            f.write(json.dumps(log) + "\n")
 
-    return jsonify({"message": "Feedback recorded"})
+        return jsonify({"message": "Feedback recorded"}), 200
+    except Exception as e:
+        return jsonify({"error": f"Feedback error: {str(e)}"}), 500
 
 @app.route('/api/download/<folder>/<filename>')
 def download_file(folder, filename):
-    if folder not in ['model', 'preview', 'log', 'analysis']:
-        return jsonify({'error': 'Invalid folder'}), 400
+    """Download files from various folders"""
     folder_map = {
         'model': MODEL_FOLDER,
         'preview': PREVIEW_FOLDER,
         'log': LOGS_FOLDER,
         'analysis': ANALYSIS_FOLDER
     }
-    return send_from_directory(folder_map[folder], filename, as_attachment=True)
+    
+    if folder not in folder_map:
+        return jsonify({'error': 'Invalid folder'}), 400
+    
+    try:
+        return send_from_directory(folder_map[folder], filename, as_attachment=True)
+    except FileNotFoundError:
+        return jsonify({'error': 'File not found'}), 404
 
-# --- Main ---
+@app.route('/api/logout', methods=['POST'])
+def logout():
+    """User logout"""
+    session.pop('user_id', None)
+    return jsonify({'message': 'Logged out successfully'}), 200
+
+# --- Error Handlers ---
+@app.errorhandler(404)
+def not_found(error):
+    return jsonify({'error': 'Not found'}), 404
+
+@app.errorhandler(500)
+def internal_error(error):
+    return jsonify({'error': 'Internal server error'}), 500
+
 if __name__ == '__main__':
-    app.run(debug=True)
-
-
+    app.run(host='0.0.0.0', port=5000, debug=True)
