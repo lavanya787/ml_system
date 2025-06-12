@@ -7,12 +7,15 @@ import sys
 import spacy
 import re
 from textblob import TextBlob
-from datetime import datetime
-import docx
+import spacy
 import pdfplumber
-from typing import Optional
-from datetime import datetime
 import difflib
+from flask import Flask, request, jsonify
+from flask import render_template, redirect, url_for
+from supabase import create_client, Client
+import bcrypt, uuid, re
+from datetime import datetime
+
 
 # Add src to path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
@@ -23,6 +26,8 @@ from utils.model_handler import ModelHandler
 from utils.llm_manager import LLMManager
 from utils.query_handler import QueryHandler
 from utils.logger import Logger
+from utils.preprocessing import Preprocessor
+from utils.file_upload import file_upload_interface
 
 # Load spaCy model for optional entity extraction
 nlp = spacy.load("en_core_web_sm")
@@ -37,10 +42,16 @@ DOMAINS = [
 
 st.set_page_config(page_title="Multi-Domain ML System", page_icon="🧠", layout="wide")
 
+# Supabase credentials
+SUPABASE_URL = "https://uctyxchurvievzvhthru.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVjdHl4Y2h1cnZpZXZ6dmh0aHJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU0ODk0MDIsImV4cCI6MjA2MTA2NTQwMn0.YytXX-q4QDO_vY9f1e_P-UWc6v6860kcsbe_bTZVgCI"
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 class MultiDomainMLSystem:
     def __init__(self):
         self.logger = Logger()
+        self.preprocessor = Preprocessor()
+        self.model_handler = ModelHandler()
         self.detector = DomainDetector(logger=self.logger)
         self.processor = DataProcessor(logger=self.logger)
         self.llm_manager = LLMManager(logger=self.logger)
@@ -56,12 +67,12 @@ class MultiDomainMLSystem:
         st.session_state.setdefault('user_id','')
         st.session_state.setdefault('current_session_queries', [])
         st.session_state.setdefault('suggested_input', '')  # For handling suggestions
-    
+        st.session_state.setdefault('logged_in', False)
+        st.session_state.setdefault('username', None)
     def run(self):
         st.title("🧠 Multi-Domain ML System")
         st.markdown("### Automatically detects and analyzes datasets from multiple domains")
-        # Manual User ID Input
-        self.handle_user_id_input()
+
         # Sidebar navigation
         st.sidebar.title("Navigation")
         page = st.sidebar.selectbox("Choose a section", [
@@ -70,7 +81,6 @@ class MultiDomainMLSystem:
             "Predictions", "System Logs"
         ])
 
-        # Domain selection removed; always auto-detect
         if page == "Dataset Upload & Detection":
             self.upload_and_detect_page()
         elif page == "Model Training":
@@ -85,45 +95,36 @@ class MultiDomainMLSystem:
             self.predictions_page()
         elif page == "System Logs":
             self.system_logs_page()
+        elif page == "Logout":
+            self.logout()  
+            st.success("Logged out successfully.")
+    def read_uploaded_file(self, uploaded_file):
+        import io
+        import pdfplumber
+        import docx
 
-    def handle_user_id_input(self):
-        """Handle manual user ID input"""
-        st.sidebar.title("User Configuration")
-        user_id = st.sidebar.text_input("👤 Enter User ID:", value=st.session_state.get('user_id', ''))
-        
-        if user_id:
-            st.session_state['user_id'] = user_id
-            st.sidebar.success(f"✅ User ID set: {user_id}")
-        else:
-            st.sidebar.warning("⚠️ Please enter a User ID to continue")
-
-    def read_uploaded_file(self, uploaded_files):
-        file_type = uploaded_files.name.split('.')[-1].lower()
+        file_type = uploaded_file.name.split('.')[-1].lower()
 
         try:
             if file_type == "csv":
-                return pd.read_csv(uploaded_files, encoding='utf-8')
+                return pd.read_csv(uploaded_file)
             elif file_type in ["xlsx", "xls"]:
-                return pd.read_excel(uploaded_files)
+                return pd.read_excel(uploaded_file)
             elif file_type == "txt":
-                content = uploaded_files.read().decode(errors="ignore")
-                return pd.DataFrame({"text": content.splitlines()})
-            elif file_type == "docx":
-                doc = docx.Document(uploaded_files)
-                fullText = "\n".join([para.text for para in doc.paragraphs])
-                return pd.DataFrame({"text": fullText.splitlines()})
-            elif file_type == "doc":
-                st.error("❌ .doc format not supported. Please convert to .docx.")
-                return None
+                text = uploaded_file.read().decode("utf-8")
+                return pd.DataFrame({"Text": text.splitlines()})
             elif file_type == "pdf":
-                with pdfplumber.open(uploaded_files) as pdf:
-                    text = "\n".join(page.extract_text() or '' for page in pdf.pages)
-                return pd.DataFrame({"text": text.splitlines()})
+                with pdfplumber.open(uploaded_file) as pdf:
+                    text = "\n".join([page.extract_text() for page in pdf.pages if page.extract_text()])
+                return pd.DataFrame({"Text": [text]})
+            elif file_type == "docx":
+                doc = docx.Document(uploaded_file)
+                text = "\n".join([p.text for p in doc.paragraphs])
+                return pd.DataFrame({"Text": [text]})
             else:
-                st.error("❌ Unsupported file type.")
                 return None
         except Exception as e:
-            st.error(f"❌ Failed to read file: {e}")
+            self.logger.log_error(f"Error reading uploaded file: {str(e)}")
             return None
  
     def upload_and_detect_page(self):
@@ -266,6 +267,11 @@ class MultiDomainMLSystem:
             selected_col = st.selectbox("Select column for distribution", numeric_cols, key="dist_col")
             fig = px.histogram(data, x=selected_col, title=f"Distribution of {selected_col}")
             st.plotly_chart(fig, use_container_width=True)
+        if not numeric_data.empty:
+            st.subheader("🔗 Correlation Heatmap")
+            corr = numeric_data.corr()
+            fig = px.imshow(corr, text_auto=True, title="Correlation Heatmap")
+            st.plotly_chart(fig, use_container_width=True)
 
     def model_training_page(self):
         st.header("🛠️ Model Training")
@@ -304,87 +310,288 @@ class MultiDomainMLSystem:
 
         if 'chat_log' not in st.session_state:
             st.session_state.chat_log = []
-        # Handle pending query to safely update input before widget creation
+
         if 'pending_query' in st.session_state:
             st.session_state['chat_input'] = st.session_state['pending_query']
             del st.session_state['pending_query']
+
+        # === Semantic Inference ===
+        def infer_column_type(col: str) -> str:
+            col_l = col.lower()
+            if "name" in col_l: return "name"
+            if any(x in col_l for x in ["roll", "id", "code", "emp", "reg"]): return "id"
+            if "gender" in col_l: return "gender"
+            if "age" in col_l: return "age"
+            if "percent" in col_l: return "percentage"
+            if "attend" in col_l: return "attendance"
+            if "extra" in col_l and "curric" in col_l: return "extracurricular"
+            if any(x in col_l for x in ["mark", "score", "math", "phys", "chem", "bio", "comp", "eng"]): return "subject"
+            return "other"
+
+        def suggest_fields_from_query(question: str, all_columns: list, top_n: int = 5) -> list:
+            question_words = re.findall(r'\w+', question.lower())
+            scored = []
+
+            for col in all_columns:
+                col_clean = col.lower().replace("_", " ")
+                score = sum(1 for word in question_words if word in col_clean)
+                if score > 0:
+                    scored.append((col, score))
+                else:
+                    # Fuzzy match fallback
+                    for word in question_words:
+                        if difflib.get_close_matches(word, col_clean.split(), cutoff=0.8):
+                            scored.append((col, 1))
+                            break
+
+            scored = sorted(scored, key=lambda x: -x[1])
+            return [col for col, _ in scored[:top_n]]
+
+        # Match fields using fuzzy logic
+        def get_relevant_fields(question: str, columns: list) -> list:
+            question_words = re.findall(r'\w+', question.lower())
+            relevant = []
+            for col in columns:
+                role = infer_column_type(col)
+                col_clean = col.lower().replace("_", " ")
+                col_words = col_clean.split()
+                # Check if column name or its words are directly in question
+                if any(word in question_words for word in col_words):
+                    relevant.append(col)
+                # Allow fuzzy match ONLY for subject/percentage (not age, gender, etc.)
+                elif role in ["subject", "percentage"]:
+                    if any(difflib.get_close_matches(w, question_words, cutoff=0.85) for w in col_words):
+                        relevant.append(col)
+            return relevant
+
+        def format_summary(sid, row, fields, all_num_cols):
+            name_col = next((col for col in row.index if infer_column_type(col) == "name"), None)
+            name = row.get(name_col, "Unknown")
+        # Build response parts for each requested field
+            parts = []
+            used_fields= set()
+            # What fields were actually asked for
+            explicitly_requested = set(fields)
+            for col in fields:
+                if col in used_fields or col not in row.index:
+                    continue
+                used_fields.add(col)
+                val = row[col]
+                role = infer_column_type(col)
+                pretty = col.replace("_", " ").title()
+                if pd.isna(val):
+                    parts.append(f"has no data for {pretty}")
+                elif role == "subject":
+                    parts.append(f"scored {val} in {pretty}")
+                elif role == "age":
+                    parts.append(f"is {val} years old")
+                elif role == "gender":
+                    parts.append(f"is identified as {val}")
+                elif role == "attendance":
+                    parts.append(f"has an attendance of {val}%")
+                elif role == "extracurricular":
+                        if str(val).strip().lower() in ["yes", "1", "true"]:
+                            parts.append("participated in extracurricular activities")
+                        else:
+                            parts.append("did not participate in extracurricular activities")
+                elif "total" in col.lower() or "sum" in col.lower():
+                    parts.append(f"has a total of **{val}** marks")
+                else:
+                    parts.append(f"has {pretty} as {val}")
+            if not parts:
+                return f"❌ **Error**: No valid data found for the requested fields for ID **{sid}**."
+        
+            return f"📊 **Student {sid}** ({name}): " + ", ".join(parts) + "."
+        
         def classify(df):
             return {
                 "text": df.select_dtypes(include='object').columns.tolist(),
                 "num": df.select_dtypes(include='number').columns.tolist(),
-                "cat": [c for c in df.select_dtypes(include='object') if df[c].nunique() < 15],
+                "cat": df.select_dtypes(include='category').columns.tolist()
             }
 
-        def format_summary(sid, row, fields):
-            name_col = next((c for c in row.index if 'name' in c.lower()), None)
-            name = row.get(name_col, "Unknown")
-            parts = [f"{'secured an overall percentage of' if 'percentage' in f.lower() else f'scored {row[f]} marks in {f.title()}'}" for f in fields]
-            return f"The student with Roll No {sid.upper()}, named {name}, " + ", and ".join(parts) + "."
-
+        # Show chat history
         for m in st.session_state.chat_log:
             icon = "👤" if m["role"] == "user" else "🤖"
             st.markdown(f"{icon} **{m['role'].capitalize()}:** {m['content']}")
 
         q = st.text_input("Ask your question here:", key="chat_input")
         if not q: return
-
-        try:
-            corrected = str(TextBlob(q).correct())
-            if corrected.lower() != q.lower(): st.info(f"🔍 Did you mean: **{corrected}**"); q = corrected
-        except: pass
-
+        # Skip auto-correction for queries that look like they contain IDs or specific terms
+        skip_correction = any(keyword in q.lower() for keyword in ['stu', 'emp', 'id', 'physics', 'chemistry', 'math', 'computer'])
+    
+        if not skip_correction:
+            try:
+                corrected = str(TextBlob(q).correct())
+                if corrected.lower() != q.lower():
+                    st.info(f"🔍 Did you mean: **{corrected}**")
+                    q = corrected
+            except: pass
         st.session_state.chat_log.append({"role": "user", "content": q})
         question = q.lower()
-        c = classify(data)
         resp, handled = "", False
-        domain = st.session_state.get("detected_domain", "generic")
-
-        # === 1. Basic Info Retrieval ===
+        c = classify(data)
+        # === Dynamic ID and Field Detection ===
         sid, sid_col = None, None
+        question_words= re.findall(r'\w+', question.lower())
         for col in c["text"]:
-            for val in data[col].dropna().astype(str):
-                if val.lower() in question: sid, sid_col = val, col; break
+            col_type = infer_column_type(col)
+            if col_type in ["id", "name"]:  # Prioritize ID and name columns
+                for val in data[col].dropna().astype(str):
+                    val_lower = val.lower()
+                    # Check for exact match or partial match in question
+                    if val_lower in question or any(val_lower in word for word in question_words):
+                        sid, sid_col = val, col
+                        break
             if sid: break
-        fields = [col for col in c["num"] if col.lower() in question]
-        if sid and fields:
+                # If no ID found, try fuzzy matching
+        if not sid:
+            for col in c["text"]:
+                for val in data[col].dropna().astype(str):
+                    val_lower = val.lower()
+                    matches = difflib.get_close_matches(val_lower, question_words, cutoff=0.6)
+                    if matches:
+                        sid, sid_col = val, col
+                        break
+                if sid:break
+
+        # Only match numeric or subject-like fields that are relevant
+        all_fields = c["num"] + c["text"]
+        matched_fields = get_relevant_fields(question, all_fields)
+
+        if sid:
             row = data[data[sid_col].astype(str).str.lower() == sid.lower()]
             if not row.empty:
-                resp, handled = format_summary(sid, row.iloc[0], fields), True
+            # fallback: if no matched_fields, show all subjects
+                if not matched_fields:
+                    matched_fields = [col for col in c["num"] if infer_column_type(col) == "subject"]
+                resp = format_summary(sid, row.iloc[0], matched_fields, c["num"])
+                handled = True
 
-        # === 2. Stats / Top / Filter / Comparison ===
+     # === Aggregations / Stats ===
         if not handled:
-            num_col = next((col for col in c["num"] if col.lower() in question), None)
-            if "average" in question and num_col: resp = f"Average {num_col}: {data[num_col].mean():.2f}"; handled = True
-            elif "max" in question and num_col: resp = f"Max {num_col}: {data[num_col].max()}"; handled = True
-            elif "min" in question and num_col: resp = f"Min {num_col}: {data[num_col].min()}"; handled = True
-            elif "top" in question and num_col:
-                top = data.nlargest(5, num_col); resp = f"Top 5 in {num_col}:\n" + "\n".join(f"- {r}" for r in top[num_col].tolist()); handled = True
-            elif "below" in question and num_col:
-                val = int(''.join([c for c in question if c.isdigit()])); filtered = data[data[num_col] < val]
-                st.dataframe(filtered); resp = f"{len(filtered)} records found with {num_col} below {val}."; handled = True
+            for col in c["num"]:
+                if col.lower() in question:
+                    if "average" in question:
+                        resp = f"Average {col}: {data[col].mean():.2f}"
+                    elif "max" in question:
+                        resp = f"Max {col}: {data[col].max()}"
+                    elif "min" in question:
+                        resp = f"Min {col}: {data[col].min()}"
+                    elif any(k in question for k in ["top", "highest", "toppers", "rank"]):
+                        matched_subjects = get_relevant_fields(question, c["num"])
 
-        # === 3. Derived / NLP / Fallback ===
-        if not handled and "pass" in question:
-            col = next((c for c in c["num"] if c.lower() in question), None)
-            if col: data['status'] = np.where(data[col] >= 40, "Pass", "Fail"); st.dataframe(data[[col, 'status']])
-            resp, handled = f"Pass/Fail status based on {col}.", True
+                        if matched_subjects:
+                            subject = matched_subjects[0]
+                            top_rows = data.nlargest(5, subject)
+        
+                            name_col = next((col for col in data.columns if infer_column_type(col) == "name"), None)
+                            id_col = next((col for col in data.columns if infer_column_type(col) == "id"), None)
 
-        if not handled: resp = "🤖 I'm not sure how to answer that. Try rephrasing or use IDs/subjects."
+                            ranks = ["🥇 1st", "🥈 2nd", "🥉 3rd", "4th", "5th"]
+                            resp_lines = [f"📊 **Top 5 Performers in {subject}:**\n"]
+        
+                            for i, (_, row) in enumerate(top_rows.iterrows()):
+                                name = row.get(name_col, "Unknown") if name_col else "Unknown"
+                                roll = row.get(id_col, "N/A") if id_col else "N/A"
+                                score = row[subject]
+                                rank = ranks[i] if i < len(ranks) else f"{i+1}th"
+                                resp_lines.append(f"{rank}: **{name}** (Roll No: {roll}) — scored {score} in {subject}")
+        
+                            resp = "\n".join(resp_lines)
+                            handled = True
+
+                    elif "below" in question:
+                        val = int(''.join([c for c in question if c.isdigit()]))
+                        filtered = data[data[col] < val]
+                        st.dataframe(filtered)
+                        resp = f"{len(filtered)} records below {val} in {col}"
+                    handled = True
+                    break
+
+    # === Pass Count / Pass Percentage ===
+        if not handled:
+            if "how many" in question and "pass" in question:
+                for col in c["num"]:
+                    if col.lower() in question:
+                        passed = data[data[col] >= 40]
+                        resp = f"{len(passed)} students passed in {col}."
+                        handled = True
+                        break
+            elif "pass percentage" in question:
+                for col in c["num"]:
+                    if col.lower() in question:
+                        total = len(data)
+                        passed = data[data[col] >= 40]
+                        percent = (len(passed) / total) * 100
+                        resp = f"Pass percentage in {col}: {percent:.2f}%"
+                        handled = True
+                        break
+        if not handled:
+                # Attempt fallback auto-question generation
+            all_columns = data.columns.tolist()
+            suggested_fields = suggest_fields_from_query(question, all_columns)
+            sid_fallback, sid_col = None, None
+            for col in data.select_dtypes(include='object').columns:
+                for val in data[col].dropna().astype(str):
+                    if val.lower() in question:
+                        sid_fallback, sid_col = val, col
+                        break
+                if sid_fallback:
+                    break
+
+            if sid_fallback and suggested_fields:
+                row = data[data[sid_col].astype(str).str.lower() == sid_fallback.lower()]
+                if not row.empty:
+                    st.info(f"🤖 Auto-completing your query using top matches: `{', '.join(suggested_fields)}`")
+                    resp = format_summary(sid_fallback, row.iloc[0], suggested_fields)
+                    handled = True
+                else:
+                    resp = "🤖 I found possible fields, but couldn't find a matching ID in the dataset."
+            else:
+                resp = "🤖 I'm not sure how to answer that. Try rephrasing or include a known ID/field."
 
         st.markdown(f"📋 {resp}")
         st.session_state.chat_log.append({"role": "assistant", "content": resp})
 
-        # === Suggestions ===
-        domain_examples = {
-            "education": ["Top students in Physics", "Average in Computer", "Pass/fail in Chemistry"],
-            "retail": ["Sales above 10000", "Top products", "Revenue by category"],
-            "generic": ["What is the max value?", "Show a bar chart"]
-        }
-        ex = domain_examples.get(domain, domain_examples["generic"])
-        cols = st.columns(len(ex))
-        for i, e in enumerate(ex):
-            if cols[i].button(e, key=f"ex_{i}"): st.session_state['pending_query'] = e; st.experimental_rerun()
-    
+        def generate_suggestions(question: str, columns: list[str]) -> list[str]:
+            q = question.lower()
+            suggestions = []
+
+            if "top" in q or "max" in q:
+                suggestions.append("Who has the highest score?")
+                suggestions.append("Top 5 performers in any subject")
+            elif "average" in q:
+                suggestions.append("Compare average of two subjects")
+                suggestions.append("Show average attendance")
+            elif "pass" in q:
+                suggestions.append("How many failed in Maths")
+                suggestions.append("Pass percentage in Chemistry")
+            elif "compare" in q or "between" in q:
+                suggestions.append("Compare Chemistry and Physics scores")
+                suggestions.append("Which subject has higher average?")
+            elif "attendance" in q:
+                suggestions.append("Average of attendance")
+                suggestions.append("Students with attendance below 75%")
+            elif "score" in q or "marks" in q or "total" in q:
+                suggestions.append("Show students with total marks below 300")
+                suggestions.append("Top 3 students in total marks")
+            else:
+                suggestions += [
+                "Top performers in any subject",
+                "Show average attendance",
+                "Pass percentage in Physics",
+                "Who failed in Chemistry?"
+            ]
+
+            return suggestions[:5]
+        domain_examples = generate_suggestions(question, c["num"] + c["text"])
+        cols = st.columns(len(domain_examples))
+        for i, e in enumerate(domain_examples):
+            if cols[i].button(e, key=f"ex_{i}"):
+                st.session_state['pending_query'] = e
+                st.experimental_rerun()
+
     def predictions_page(self):
         st.header("📉 Predictions")
         
@@ -485,6 +692,12 @@ class MultiDomainMLSystem:
             }
             for key, value in session_info.items():
                 st.write(f"**{key}:** {value}")
+    def logout(self):
+        st.session_state.logged_in = False
+        st.session_state.username = None
+        st.session_state.user_id = ''
+        st.success("Logged out successfully.")
+        st.experimental_rerun()
 
 if __name__ == "__main__":
     app = MultiDomainMLSystem()
